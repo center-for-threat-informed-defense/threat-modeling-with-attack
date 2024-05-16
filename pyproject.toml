@@ -8,6 +8,7 @@ license = "Apache"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+sphinx-toolbox = "^3.5.0"
 
 [tool.poetry.group.dev.dependencies]
 bandit = "1.7.0"

@@ -34,8 +34,11 @@ release = version
 # ones.
 extensions = [
     "sphinx_rtd_theme",
+    "sphinx_toolbox",
+    "sphinx_toolbox.github",
 ]
-
+github_username = "CTID"
+github_repository = "CTID"
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
