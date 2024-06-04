@@ -19,10 +19,8 @@ mollit anim id est laborum.
     question-2
     question-3
     question-4
+    cheat-sheet
     additional-resources
-    future-work
-    acknowledgements
-    center-projects
 
 
 Notice

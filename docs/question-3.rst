@@ -1,5 +1,9 @@
 Question 3: What are we going to do about it?
 =============================================
+.. figure:: /Graphics/Question3Graphic.png
+    :scale: 75%
+    :align: center
+|
 
 Now that we have a prioritized list of TTPs our adversaries will likely use against our specific tech platform(s), we need to identify how our tech platform(s)’s existing security measures mitigate them. This section will provide a guide for using the Center’s Mappings Explorer  website to identify which existing security capabilities within your environment are mapped to the threats you're concerned about. If the Explorer’s existing mappings don’t fit your needs, this section will also introduce a process for mapping security controls and capabilities, native to a technology platform or mapping framework, to ATT&CK TTPs. These resources can be used to understand, assess, and record the real-world threats that security controls, within your technology platform, are able to mitigate. Using these Mappings, we can prioritize defensive investments against high priority TTPs targeting our technology platforms. Continuing with the AMPS example in Question 2, we will see which of the TTPs identified within our Azure attack tree branch are mitigated by leveraging the Azure mapping within Mappings Explorer.
 
@@ -16,27 +20,29 @@ You can use Mappings Explorer for many different purposes. In this document, we 
 Creating Security Capability Mappings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Center uses a standard methodology to map security controls native to a technology platform to ATT&CK. As discussed previously, many of these mappings have already been done for you and are readily accessible in mappings explorer referenced in the previous section. In the event you have a technology platform that has not been mapped, the below steps are a reusable method of using ATT&CK to determine the capabilities of a platform's security offerings. The methodology consists of the following basic steps:
+The Center uses a standard methodology to map security controls native to a technology platform to ATT&CK. As discussed previously, many of these mappings have already been done for you and are readily accessible in mappings explorer referenced in the previous section. In the event you have a technology platform that has not been mapped, the below steps are a reusable method of using ATT&CK to determine the capabilities of a platform's security offerings. 
 
-#. Identify Platform Security Controls
+.. admonition::  The methodology consists of the following basic steps:
 
-    * Identify the native security controls available on the platform.
+    #. Identify Platform Security Controls
 
-#. Review Security Capability
+        * Identify the native security controls available on the platform.
 
-    * For each identified control, understand the security capabilities it provides.
+    #. Review Security Capability
 
-#. Identify Mappable ATT&CK Techniques & Sub-techniques
+        * For each identified control, understand the security capabilities it provides.
 
-    * Identify the ATT&CK techniques and sub-techniques mappable to the control.
+    #. Identify Mappable ATT&CK Techniques & Sub-techniques
 
-#. Assess and Score Control Effectiveness
+        * Identify the ATT&CK techniques and sub-techniques mappable to the control.
 
-    * Assess the effectiveness of the type of protection the control provides (protect, detect, or response) for the identified ATT&CK techniques and sub-techniques.
+    #. Assess and Score Control Effectiveness
 
-#. Create a Mapping
+        * Assess the effectiveness of the type of protection the control provides (protect, detect, or response) for the identified ATT&CK techniques and sub-techniques.
 
-    * Create a mapping based on the information gathered from the previous steps.
+    #. Create a Mapping
+
+        * Create a mapping based on the information gathered from the previous steps.
 
 The full mapping methodology and scoring rubric are available on the Mappings Explorer website.
 
@@ -72,16 +78,26 @@ The next table presents the Azure Security Capability mappings that can provide 
 Identify Areas of Risk
 ~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: Graphics/Identifying_Risk.png
+    :scale: 75%
+    :align: center
+
 During this step of the process, we will be combining scored threat TTPs that were compiled from the evidence and theory sections with the defensive capabilities mapped in the previous section. The example will continue to focus on the Azure platform and the TTPs associated with possible threats against the AMPS device. This step results in three navigator layers, the layers are optional and can be chosen to be completed based on the needs of the organization.
 Start by creating two navigator layers and overlaying them for a comprehensive view:
 
 **Layer 1: A visualization of the threat scoring determined in Question 2 (Figure below). To create this layer within Navigator, the following numbering will be used:**
 
-* 5 = No theory, No evidence
-* 4 = No theory, Some evidence or Some theory, No evidence
-* 3 = No Theory, Strong Evidence or Some theory, Some Evidence or Strong theory, No evidence
-* 2 = Some theory, Strong evidence or Strong theory, Some evidence
-* 1 = Strong theory, Strong evidence
+.. admonition::  Scoring:
+
+    **5 =** No theory, No evidence
+    
+    **4 =** No theory, Some evidence or Some theory, No evidence
+
+    **3 =** No Theory, Strong Evidence or Some theory, Some Evidence or Strong theory, No evidence
+
+    **2 =** Some theory, Strong evidence or Strong theory, Some evidence
+
+    **1 =** Strong theory, Strong evidence
 
 Example: T1556: Modify Authentication Process = Some theory Some Evidence = 3
 
@@ -96,20 +112,77 @@ To figure out this range, you will count the amount of defensive capabilities fo
 T1556: Modify Authentication Process # of defensive capabilities = 1
 Maximum # of defensive capabilities = 15 (Password Spraying)
 
+.. collapse:: Example Scoring Layer
+
+    .. figure:: /Graphics/ScoringLayer.svg
+        :scale: 75%
+        :align: center
+    .. raw:: html
+
+
+        <p>
+            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
+            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
+
+            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <i class="fa fa-download"></i> Download Layer JSON</a>
+        </p>
+|
 Example ATT&CK Navigator Layer for Number of Defensive Capabilities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once those two layers are completed, you overlay them to create a heat map that visualizes the overall risk. On the low end we have low threat high defense and on the high end we have high threat low defense. An easy way to determine this is by adding the maximum determined for layer 2 (in our case 15) to the maximum for layer 1 (which should always be 5). The resulting number will determine the range to set for the Navigator gradient (in our case 15 + 5 = 20). Then, for each TTP, the associated number for layer 1 and layer 2 will be combined. See below example risk scoring for T1556 Modify Authentication Process.
+Once those two layers are completed, you overlay them to create a heat map that visualizes the overall risk. On the low end we have low threat high defense and on the high end we have high threat low defense. An easy way to determine this is by adding the maximum determined for layer 2 (in our case 15) to the maximum for layer 1 (which should always be 5). The resulting number will determine the range to set for the Navigator gradient (in our case 15 + 5 = 20). Then, for each TTP, the associated number for layer 1 and layer 2 will be combined. When these are plotted on the navigator layer, light purple is low risk and dark purple is high risk.
 
-T1556 Modify Authentication Process:
+.. collapse:: Example Defense Layer
 
-* Some theory Some Evidence = 3
-* # of defensive capabilities = 1
-* Navigator value: 4
-* Navigator scale: 2 – 20
+    .. figure:: /Graphics/defenseLayer.svg
+        :scale: 75%
+        :align: center
+    .. raw:: html
 
-When these are plotted on the navigator layer, light purple is low risk and dark purple is high risk.
 
+        <p>
+            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
+            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
+
+            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <i class="fa fa-download"></i> Download Layer JSON</a>
+        </p>
+|
+.. admonition::  T1556 Modify Authentication Process Example:
+
+    **Some theory Some Evidence** = 3
+
+    **# of defensive capabilities** = 1
+
+    **Navigator value** = 4
+
+    **Navigator scale** = 2 – 20
+
+.. collapse:: Example Risk Layer
+
+    .. figure:: /Graphics/RiskLayer.svg
+        :scale: 75%
+        :align: center
+    .. raw:: html
+
+
+        <p>
+            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
+            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
+
+            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <i class="fa fa-download"></i> Download Layer JSON</a>
+        </p>
+|
+
+.. collapse:: Scoring, Defense, and Risk Layer Video Walkthrough
+
+    .. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+|
 Implementing Mitigations to Risks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 At this stage, by leveraging the Mapping Explorer or crafting mappings of our own, we understand the mitigations within our environment and the degree to which each addresses the threats we are likely to face. By implementing these specific Azure controls, that we’ve mapped to our relevant threat TTPs, we’ve significantly reduced the potential impact of an attack.

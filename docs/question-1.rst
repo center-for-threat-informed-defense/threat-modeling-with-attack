@@ -1,6 +1,9 @@
 Question 1: What are we working on?
 ===================================
-
+.. figure:: /Graphics/question1Graphic.png
+    :scale: 75%
+    :align: center
+|
 Question 1 enables the identification and analysis of the primary and secondary
 function(s) of the system. It identifies critical tasks that must be performed for the
 system to successfully accomplish its function(s) and highlights the resources those
@@ -123,16 +126,20 @@ At this stage, we want to determine: What is the ultimate purpose of the system?
 It’s here that we’ll invoke our fictional example device: the Ankle Monitoring Predictor of Stroke (AMPS). This made up IoT device is pulled straight from MITRE’s Playbook for Threat Modeling Medical Devices. In our scenario, this device is meant to be worn by a patient who is at increased risk of experiencing a stroke. By wearing the device throughout the day, the patient and their doctor can monitor for indicators of an imminent stroke via a companion app on the patient’s phone and readings uploaded to the AMPS cloud service each day.
 As a security team evaluating the AMPS for its manufacturer, we identified that a core mission objective of the AMPS’s is to collect and share patient health data in an accurate and secure manner. Because of the sensitive nature of the health data collected and shared by the AMPS, which includes location data to guide an emergency response in the event of a stroke, the AMPS device should effectively protect the confidentiality of that data.
 
-.. image:: Graphics/Picture1.png
-   :alt: Mission and System Decomposition
-   :height: 48px
-   :width: 24px
+.. figure:: /Graphics/3.png
+    :scale: 50%
+    :align: right
+
 
 Step 2: Identify Operational Tasks (Cross Functional Flow Chart)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Goal:** Planning your routes
 Next, leverage the knowledge pooled from stakeholders to determine the different operational sub-systems that contribute to the system’s primary purpose identified in Step 1. An Analytic Hierarchy Process (AHP) can be used to weigh the importance of different operational systems. Ask yourself, what are the operational tasks that must be executed to perform that function? These are also known as Mission Essential Functions (MEFs). To visualize these MEFs, we recommend using a cross functional flow chart like the one below for the AMPS.
 
+.. figure:: /Graphics/4.png
+    :scale: 75%
+    :align: center
+|
 Part 3: System Decomposition - Identify system processes by mapping operational tasks to system functions (Data Flow Diagram)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Goal:** Mapping your routes through the system
@@ -147,6 +154,13 @@ There are multiple ways to design a DFD but we recommend the DFD3 standard. Begi
 
 From these questions, start to draw your diagram and gradually add additional components and sub-systems to the DFD depending on scope and time. Start at a high-level and work your way down as seen in the below AMPS examples. Ultimately, these datapoints should come together to form a comprehensive map of your system.
 
+.. figure:: /Graphics/5.png
+    :scale: 70%
+    :align: left
+.. figure:: /Graphics/6.png
+    :scale: 50%
+    :align: right
+|
 
 Step 4: Determine which system functions are associated with distinct operational tasks.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -176,3 +190,12 @@ Now that you’ve done mission and system decomposition, you should have a much 
 * What are downstream effects of taking each cyber asset offline?
 
 In the example below, we’ve identified critical assets/components of the AMPS using our DFD, highlighting them in gold.
+
+.. figure:: /Graphics/7.png
+    :scale: 70%
+    :align: left
+
+.. figure:: /Graphics/8.png
+    :scale: 70%
+    :align: right
+
