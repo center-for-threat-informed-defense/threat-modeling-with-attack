@@ -1,8 +1,10 @@
 Question 3: What are we going to do about it?
 =============================================
+
 .. figure:: /Graphics/Question3Graphic.png
     :scale: 75%
     :align: center
+
 |
 
 Now that we have a prioritized list of TTPs our adversaries will likely use against our specific tech platform(s), we need to identify how our tech platform(s)’s existing security measures mitigate them. This section will provide a guide for using the Center’s Mappings Explorer  website to identify which existing security capabilities within your environment are mapped to the threats you're concerned about. If the Explorer’s existing mappings don’t fit your needs, this section will also introduce a process for mapping security controls and capabilities, native to a technology platform or mapping framework, to ATT&CK TTPs. These resources can be used to understand, assess, and record the real-world threats that security controls, within your technology platform, are able to mitigate. Using these Mappings, we can prioritize defensive investments against high priority TTPs targeting our technology platforms. Continuing with the AMPS example in Question 2, we will see which of the TTPs identified within our Azure attack tree branch are mitigated by leveraging the Azure mapping within Mappings Explorer.
@@ -20,7 +22,7 @@ You can use Mappings Explorer for many different purposes. In this document, we 
 Creating Security Capability Mappings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Center uses a standard methodology to map security controls native to a technology platform to ATT&CK. As discussed previously, many of these mappings have already been done for you and are readily accessible in mappings explorer referenced in the previous section. In the event you have a technology platform that has not been mapped, the below steps are a reusable method of using ATT&CK to determine the capabilities of a platform's security offerings. 
+The Center uses a standard methodology to map security controls native to a technology platform to ATT&CK. As discussed previously, many of these mappings have already been done for you and are readily accessible in mappings explorer referenced in the previous section. In the event you have a technology platform that has not been mapped, the below steps are a reusable method of using ATT&CK to determine the capabilities of a platform's security offerings.
 
 .. admonition::  The methodology consists of the following basic steps:
 
@@ -48,11 +50,13 @@ The full mapping methodology and scoring rubric are available on the Mappings Ex
 
 Creating Custom Mappings
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
 For most users, you should start with Mappings Explorer to find mappings data relevant to your environment, available for downloading the data in spreadsheet or machine-readable formats. If you have a need to produce your own customized mappings data, then you can apply the mapping methodology to the platform capabilities you have.
 If you are not using one of the mapping frameworks in the Mappings Explorer collection and instead plan on creating a custom mapping for your technology platform, we recommend using the Center’s Mappings Editor tool and following the documentation to create new mappings.
 
 Mappings Editor
 ~~~~~~~~~~~~~~~
+
 Mappings Editor  is an interactive, web-based tool created by the Center for creating and updating mappings of security capabilities to ATT&CK. At the time of publication, this tool is available as a public beta.
 Mappings Editor makes it quick and easy to create, edit, and review mappings and includes several features specially engineered to enhance the mapping process. The Editor is designed to streamline the creation of mapping files, which consist of one or more mappings that associate a security control, vulnerability, or capability to an adversary behavior catalogued by ATT&CK. Using the Mappings Editor, the mapping files can be exported as ATT&CK Navigator Layers or as .CSV, .JSON, .YAML, or Microsoft Excel (.XLSX) Files. To get started, review the Editor Documentation to learn how to create the initial mappings file, and then use the link provided to launch the Mappings Editor web application.
 
@@ -90,7 +94,7 @@ Start by creating two navigator layers and overlaying them for a comprehensive v
 .. admonition::  Scoring:
 
     **5 =** No theory, No evidence
-    
+
     **4 =** No theory, Some evidence or Some theory, No evidence
 
     **3 =** No Theory, Strong Evidence or Some theory, Some Evidence or Strong theory, No evidence
@@ -127,7 +131,9 @@ Maximum # of defensive capabilities = 15 (Password Spraying)
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
+
 Example ATT&CK Navigator Layer for Number of Defensive Capabilities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -148,7 +154,9 @@ Once those two layers are completed, you overlay them to create a heat map that 
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
+
 .. admonition::  T1556 Modify Authentication Process Example:
 
     **Some theory Some Evidence** = 3
@@ -174,6 +182,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
 
 .. collapse:: Scoring, Defense, and Risk Layer Video Walkthrough
@@ -183,8 +192,10 @@ Once those two layers are completed, you overlay them to create a heat map that 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |
+
 Implementing Mitigations to Risks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 At this stage, by leveraging the Mapping Explorer or crafting mappings of our own, we understand the mitigations within our environment and the degree to which each addresses the threats we are likely to face. By implementing these specific Azure controls, that we’ve mapped to our relevant threat TTPs, we’ve significantly reduced the potential impact of an attack.
 By reviewing our overlayed Navigator layers, we can see that several TTPs, such as “Valid Accounts” (T1078), even with existing mitigations implemented within our Azure environment, remains a high risk to our system. Addressing these latent risks is a priority and your team may already have applicable controls they are aware. If you and your team can’t think of additional fixes to these threats, we recommend using the Center’s mappings of NIST 800-53. 800-53 is a list of security and privacy controls for information systems that, if implemented, can address the latent risk posed by our remaining threats.
 The Valid Account technique T1078, for example, is mapped to several 800-53 controls. These include information Exchange, Usage Restrictions, Boundary Protection and many more. These controls represent best practices that can be adopted within your system to better protect against your remaining high risk TTPs. In our case, one mitigation might be changing existing policies within the environment to achieve “least functionality.” This can be done by ensuring component functionality is limited to a single function per component, removing unused or unnecessary software, or limiting unnecessary physical and logical ports and protocols to prevent unauthorized connection of components, transfer of information, and tunneling. These mitigations can further be tailored to fit your given system by collaborating with your team on potential implementations.

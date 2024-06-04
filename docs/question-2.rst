@@ -1,8 +1,10 @@
 Question 2: What could go wrong?
-===============================
+================================
+
 .. figure:: /Graphics/Question2Graphic.png
     :scale: 75%
     :align: center
+
 The process outlined in Question 1 derives critical assets within a particular system.
 In Question 2, we identify and prioritize threats to those assets. ATT&CK will serve as
 the framework through which we map and discuss threats to our system. While our
@@ -15,6 +17,7 @@ For more information on MITRE ATT&CK, see these resources.
 
 Theory vs. Evidence
 -------------------
+
 Generally, there are two complementary approaches that can be utilized to perform
 threat analysis: **Theoretical Modeling**, and **Evidence-based Analysis**. Regardless of
 which threat modeling methodology you use to answer Question 2, you will need to
@@ -43,7 +46,9 @@ security posture, both for known and unknown threats.
 .. figure:: /Graphics/10.png
     :scale: 75%
     :align: center
+
 |
+
 The above scale illustrates how theory and evidence support each other throughout the
 threat modeling process by focusing on the vulnerability disclosure lifecycle.
 Inherently, theory-based modeling approaches tend to be more preparatory in
@@ -57,12 +62,14 @@ adversary might exploit to extract user information.
 
 Theory
 ------
+
 As we’ve discussed, a theory-based approach, regardless of which threat modeling
 methodology is used, identifies threats that have a potential to impact your system.
 We broke this approach into three parts.
 
 Part 1: Structured threat brainstorming
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 **Goal:** Generate an unweighted list of threats against your system, based on system
 analysis produced when answering Question 1.
 
@@ -99,7 +106,9 @@ of the attacker.
 .. figure:: /Graphics/11.png
     :scale: 50%
     :align: center
+
 |
+
 Here we see a theoretical attack tree for a thief attempting to burgle a house.
 The thief has several potential avenues for achieving their goal. Some are more
 complex than others, requiring multiple steps. Some constitute entire sub-trees of
@@ -119,7 +128,9 @@ to allow another strategy to move forward.
 .. figure:: /Graphics/12.png
     :scale: 50%
     :align: center
+
 |
+
 The arrow-shaped OR nodes within the tree represent goals that can be achieved by any
 of the goals below them (here, Intermediate Goal 1 OR 2 OR 3). The flat bottom AND
 nodes, similarly, are fulfilled by the goals listed beneath them. All these goals
@@ -143,6 +154,7 @@ critical paths and components.
 .. figure:: /Graphics/13.png
     :scale: 50%
     :align: left
+
 .. figure:: /Graphics/14.png
     :scale: 65%
     :align: right
@@ -161,7 +173,9 @@ Part 3: Translating Attack Tree Concepts into ATT&CK TTPs
 .. figure:: /Graphics/16.png
     :scale: 75%
     :align: center
+
 |
+
 Now that we’ve built out our attack tree, clarifying our language and invoking specific system data exchanges and assets, we can begin cataloguing the ATT&CK Tactics, Techniques, and Procedures (TTPs) needed to facilitate those attacks on each critical path and component. These datapoints will constitute the core of our attack tree and link our results from this theoretical exercise to the results of our evidence-based analysis later.
 
 This step is essentially the manual translation of Part 2’s conceptual attack steps into tangible ATT&CK TTPs. We recommend using Decider to assist in these translations. This tool allows you to either filter for specific tactics, platforms, and data sources that will direct you towards the appropriate TTP or search key terms, related to your attack concept, in the search bar to derive the appropriate TTP. When comparing your Part 2 attack tree concepts to existing ATT&CK TTPs, consider adding nodes to your attack tree for any TTPs you may not have thought of.
@@ -171,6 +185,7 @@ Below is an example of how a theoretical attack can be aligned with a TTP (T1185
 .. figure:: /Graphics/17.png
     :scale: 50%
     :align: right
+
 |
 
 Over the course of our search for threats relevant to the AMPS device, we determined that one of the vectors (branch of the tree) an attacker could use to access user location data was by accessing their web portal. We determined that one potential vector for gaining access to their portal was by stealing their log in credentials. This can be done using an activity characterized as Session hijacking in ATT&CK.
@@ -187,9 +202,10 @@ An example of the AMPS attack tree and all associated TTPs can be found below.
 
 Evidence
 ---------
+
 .. note::
   Throughout the evidence section for the purpose of saving time layers can be omitted. For the sake of evidence being incorporated it is recommended to include at least one of the layers for data, but which is up to the needs of the organization.
-  
+
 The previous section focused on a theory-based approach using attack trees. In this section, we will cover the evidence-based approach to complement our theoretical tree and aid in identifying additional TTPs for consideration in the tree. Evidence is derived by attacks observed in the wild and reported on by legitimate sources. The MITRE ATT&CK team reads opensource reports published by these sources and associates adversarial behavior with a TTP. Sources for these TTPs are different than those previously used to build the theory-based attack tree.  This is why the complementary approach of theory and evidence is crucial. We will use the TTPs derived in this section to add to the attack tree in the previous section. We recommend considering TTPs derived by four types of observed behavior.
 
 #. TTPs used against your Technology Platform(s)
@@ -204,7 +220,9 @@ As we walk through this section and explain how to generate TTPs from each of th
 .. figure:: /Graphics/19.png
     :scale: 50%
     :align: right
+
 |
+
 The observed TTPs in these layers may not have been previously used to achieve the goal we are analyzing in our attack tree (user location data). This is expected. Often, intrusions go through your company to access your business partners or customers. Though your company, or others in your industry, may not have been the desired end target in these reported incidents, you were an intermediate target and the TTPs used in these “leap frog” intrusions against your industry or tech platform can be used to target you in the future. Thus, we include them in our observed TTP layers.
 
 .. note::
@@ -214,6 +232,7 @@ The observed TTPs in these layers may not have been previously used to achieve t
 
 Layer 1: Technology Platform TTPs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 **Goal:** Compile a list of TTPs that have been used to target your tech platform.
 
 To characterize the observed threats targeting your system, we recommend starting with techniques targeting your specific technology platform. This information will be used to prioritize threats in your attack tree later.
@@ -226,8 +245,8 @@ Types of observed CTI data varies by company depending on which commercial data 
     .. figure:: /Graphics/Platform_Layer.svg
         :scale: 75%
         :align: center
-    .. raw:: html
 
+    .. raw:: html
 
         <p>
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
@@ -236,10 +255,12 @@ Types of observed CTI data varies by company depending on which commercial data 
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
 
 Layer 2: Threat Actor (TA) TTPs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 **Goal:** Compile a list of TTPs that have been used by a threat group/s targeting your industry.
 
 If time permits, we also recommend generating threat profiles to characterize the adversaries, or groups, that are likely to target your industry and therefore your system. This information will also help in prioritizing threats in your attack tree later.
@@ -258,6 +279,7 @@ One final opensource resource is the Thai CERT database. This database allows yo
     .. figure:: /Graphics/20.svg
         :scale: 75%
         :align: center
+
     .. raw:: html
 
 
@@ -268,6 +290,7 @@ One final opensource resource is the Thai CERT database. This database allows yo
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
 
 Layer 3: Malicious Software TTPs
@@ -285,6 +308,7 @@ Our example relies on Azure which results in two findings of software, AADIntern
     .. figure:: /Graphics/21.svg
         :scale: 75%
         :align: center
+
     .. raw:: html
 
 
@@ -295,10 +319,12 @@ Our example relies on Azure which results in two findings of software, AADIntern
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
 
 Layer 4: Campaign TTPs
 ~~~~~~~~~~~~~~~~~~~~~~
+
 **Goal:** Compile a list of TTPs that have been used in a campaign targeting your industry.
 
 To provide a more detailed picture, if an organization has the time, it is recommended they research campaigns that might be applicable to them. This can be done in various ways similar to the previous layers. First, if there are any campaigns recently reported on that are of concern to your organization, these should be included. It might also make sense to include any data from previous campaigns that targeted your organization as well as data from tools used internally. Once this data has been considered and added, the team should use the ATT&CK campaigns page for further research. Focus on campaigns targeting your specific industry. This can be searched by using ‘CTL + F’ on https://attack.mitre.org/campaigns/. During this step, be cognizant of the timing of these campaigns. We do not want to be looking at campaigns that are too old to be useful. Only your organization can know which campaigns they find useful but keep these dates in mind as they will affect the scoring in the next section.
@@ -321,6 +347,7 @@ Continuing with an example applicable to the AMPS device, we focused on one of t
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
 
 .. collapse:: Evidence Layer Video Walkthrough
@@ -332,6 +359,7 @@ Continuing with an example applicable to the AMPS device, we focused on one of t
 
 Compile All CTI Layers and Compare to Theory-Base Attack Tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 **Goal:** Compile list of TTPs that your system will most likely face
 
 Right now, you have a list of TTPs, in the form of ATT&CK Navigator Layers, that have been known to be used against technology platforms in your tree. Take those lists and overlap them using Navigator. This yields a longer list of all TTPs that could be relevant to your attack tree. The overlap between layers can provide some insight for prioritization. The example below shows a combination of all layers. The blue TTPs will show those used by threat actors targeting your industry, the red TTPs signify the TTPs used by malicious software targeting your industry, the yellow highlights the TTPs used by campaigns targeting your industry, and grey shows any overlap between multiple factors.
@@ -343,6 +371,7 @@ Right now, you have a list of TTPs, in the form of ATT&CK Navigator Layers, that
     .. figure:: /Graphics/23.svg
         :scale: 75%
         :align: center
+
     .. raw:: html
 
 
@@ -353,6 +382,7 @@ Right now, you have a list of TTPs, in the form of ATT&CK Navigator Layers, that
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
 
 Compare these TTPs to those in your theory-based attack tree. Since these TTPs are all related to the Azure branch of the attack tree, we will focus there. In practice, you would make one overlay for each technology platform branch of your tree. To apply this to our current example we are going to take our attack tree branch centered around Azure and map the steps back to ATT&CK techniques, as seen in the navigator layer below.
@@ -364,6 +394,7 @@ Compare these TTPs to those in your theory-based attack tree. Since these TTPs a
     .. figure:: /Graphics/24.svg
         :scale: 75%
         :align: center
+
     .. raw:: html
 
 
@@ -374,7 +405,9 @@ Compare these TTPs to those in your theory-based attack tree. Since these TTPs a
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
+
 .. collapse:: Evidence and Theory Combined Video Walkthrough
 
     .. raw:: html
@@ -391,8 +424,8 @@ This navigator layer is now placed on top of our overall evidence layer above an
     .. figure:: /Graphics/25.svg
         :scale: 75%
         :align: center
-    .. raw:: html
 
+    .. raw:: html
 
         <p>
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
@@ -401,6 +434,7 @@ This navigator layer is now placed on top of our overall evidence layer above an
             <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
+
 |
 
 The list we obtain from the last evidence and theory layer is where we will focus our efforts. While the other combined list can, without a doubt, be extremely helpful we want to focus on the TTPs we believe are applicable to our system. This is the list of TTPs we will use moving into the next section.
@@ -412,7 +446,7 @@ Scoring the Catalogue of Threats to Your System
 
 .. note::
 
-    Scoring is not a mandatory step, however it can provide great context for priorization. 
+    Scoring is not a mandatory step, however it can provide great context for priorization.
 
 This step lets us calculate the threat associated with specific attack vectors and TTPs. The end goal of this step is to prioritize which threats we mitigate in Question 3.
 
@@ -462,6 +496,7 @@ The result will manifest like the diagram shown. TTPs are assigned a theory-evid
 
 Example scoring
 ^^^^^^^^^^^^^^^
+
 Consider TTP: **T1011.001** – Exfiltration Over Other Network Medium: Exfiltration Over Bluetooth
 Assume the adversarial goal in this case is to steal sensitive patient data. One avenue to do so would be to go directly to the source – the AMPS device itself.
 T1011.001 describes activity where “Adversaries may attempt to exfiltrate data over Bluetooth rather than the command-and-control channel. If the command-and-control network is a wired Internet connection, an adversary may opt to exfiltrate data using a Bluetooth communication channel.” The AMPS device has been designed with Bluetooth in mind, as it needs to pair with a phone.
@@ -494,6 +529,7 @@ Depending on your priorities, you may choose to sort the categories of TTPs diff
 
 Example Scoring TTPs within AMPS’s Azure Attack Tree Branch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The following table summarizes the TTPs identified during the Theory and Evidence activities presented earlier in this section. We’ve sorted the table into three columns – Theory, Evidence, and both, to track which activity each TTP was derived from.
 To keep rest of this example concise, we have elected to only score the TTPs listed under the “Theory and Evidence” column. However, scoring can (and should) be applied to all identified TTPs.
 

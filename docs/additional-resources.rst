@@ -16,6 +16,7 @@ Leveraging existing CTI allows you to develop known attack vectors that could be
     * Reports should make it easy to identify any information gaps. Use multiple sources to address gaps and corroborate the data, if possible.
     * Reports should distinguish between facts, assumptions, and analytical assessments.
     * When available, use attribution and targeting information from reports to enrich your attack flows.”
+
 *	When it comes to researching CTI for embedded systems, MITRE developed a publicly available knowledge base called EMB3D. This is a great resource for both theory and evidence. Start by down selecting by embedded system property and read through the various threats to each.
 
 It is a good idea to have a central location/repository for all your CTI data. This can be a spreadsheet or a threat intelligence platform (TIP) like OpenCTI (see example data below for FIN7). There are many TIP out there that will do to research work for you – automatically pulling in the latest vender reports. Some TIPs will even auto-parse the data in reports for you. Be sure to spot check any automated report parsing for accuracy.

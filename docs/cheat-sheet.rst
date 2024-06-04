@@ -1,5 +1,6 @@
 Cheat Sheet
-==========
+===========
+
 .. note::
     This cheat sheet can be used to save time throughout the threat modeling process outlined, but is it important to understand the full process prior to choosing this version. Please review Questions 1 through 4 before choosing this route.
 
@@ -15,7 +16,7 @@ What could go wrong?
 * Analyze your DFD using a simple attack tree or STRIDE
 * Brainstorm ATT&CK TTPs that could be used to attack the critical components within your DFD
 
-    * Gather ideas from TTPs used against your tech platform previously- see ATT&CK matrix and down select by platform 
+    * Gather ideas from TTPs used against your tech platform previously- see ATT&CK matrix and down select by platform
 * Quick search through existing security stack for ability to defend against these brainstormed TTPs
 
 What are we going to do about it?

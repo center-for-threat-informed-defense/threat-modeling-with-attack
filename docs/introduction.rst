@@ -3,7 +3,9 @@ Introduction
 .. figure:: /Graphics/introGraphic.png
     :scale: 75%
     :align: center
+
 |
+
 The process outlined in this paper details our recommended approach to integrating
 ATT&CK into your organization’s existing threat modeling methodology. At the core of
 this approach are four key questions, outlined in the Threat Modeling Manifesto, that

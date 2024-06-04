@@ -3,7 +3,9 @@ Question 1: What are we working on?
 .. figure:: /Graphics/question1Graphic.png
     :scale: 75%
     :align: center
+
 |
+
 Question 1 enables the identification and analysis of the primary and secondary
 function(s) of the system. It identifies critical tasks that must be performed for the
 system to successfully accomplish its function(s) and highlights the resources those
@@ -139,7 +141,9 @@ Next, leverage the knowledge pooled from stakeholders to determine the different
 .. figure:: /Graphics/4.png
     :scale: 75%
     :align: center
+
 |
+
 Part 3: System Decomposition - Identify system processes by mapping operational tasks to system functions (Data Flow Diagram)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Goal:** Mapping your routes through the system
@@ -160,6 +164,7 @@ From these questions, start to draw your diagram and gradually add additional co
 .. figure:: /Graphics/6.png
     :scale: 50%
     :align: right
+
 |
 
 Step 4: Determine which system functions are associated with distinct operational tasks.
