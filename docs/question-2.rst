@@ -32,6 +32,7 @@ The two axis on the above table represent the theoretical and evidence-based out
    * Theory-base threats are hypothetical threats. These include brainstorming
    conducted by your team, known exploits performed in a controlled environment, and
    hypothetical attacks that have not been leveraged by threat actors.
+
 * Evidence includes documented threats that have been leveraged against other system(s)
    * Evidence-based threats are observed threats. These include TTPs used to exploit
    technology platforms leveraged by your system, known exploits used by adversaries
