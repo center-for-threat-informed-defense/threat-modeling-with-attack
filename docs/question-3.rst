@@ -136,7 +136,7 @@ Maximum # of defensive capabilities = 15 (Password Spraying)
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\Scoring_Layer_Final.json" download="Scoring_Layer_Final.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -163,7 +163,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\protection_layer_Final.json" download="protection_layer_Final.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -195,7 +195,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\Risk_Layer_Final.json" download="Risk_Layer_Final.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 

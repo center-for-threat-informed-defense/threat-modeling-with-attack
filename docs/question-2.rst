@@ -231,7 +231,7 @@ Below is an ATT&CK Navigator view showing the TTPs linked to Azure AD. Throughou
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\platform_layer.json" download="platform_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -268,7 +268,7 @@ A Navigator layer exists on each Group’s page. Use this layer to generate a li
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\threat_actor_layer.json" download="threat_actor_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -308,7 +308,7 @@ In our case, we search “Azure,” which results in two findings of software: A
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\software_layer.json" download="software_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -341,7 +341,7 @@ For the AMPS device, we focused on one of the campaigns related to healthcare, s
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\campaign_layer_(only).json" download="campaign_layer_(only).json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -381,7 +381,7 @@ Right now you have a list of TTPs, in the form of ATT&CK Navigator Layers, that 
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\evidence_layer.json" download="evidence_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -407,7 +407,7 @@ Compare these TTPs to those in your theory-based attack tree. Since these TTPs a
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\theory.json" download="theory.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -439,7 +439,7 @@ Compare these TTPs to those in your theory-based attack tree. Since these TTPs a
             <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
             <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
 
-            <a class="btn btn-primary" target="_blank" href="..\heatmap_InT_2.09.json" download="heatmap_InT_2.09.json">
+            <a class="btn btn-primary" target="_blank" href="..\theory_+_evidence.json" download="theory_+_evidence.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
