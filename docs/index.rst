@@ -1,20 +1,25 @@
 Threat Modeling with ATT&CK |version|
 =====================================
 
-.. TODO Enter a one paragraph summary here.
+The process outlined in this paper details our recommended approach to integrating ATT&CK into your organization’s existing threat modeling methodology. At the core of this approach are four key questions, outlined in the Threat Modeling Manifesto, that we need to answer:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+* Question 1: What are we working on?
+* Question 2: What could go wrong?
+* Question 3: What are we going to do about it?
+* Question 4: Did we do a good job?
 
 .. toctree::
     :maxdepth: 2
     :caption: Contents
 
     introduction
+    question-1
+    question-2
+    question-3
+    question-4
+    cheat-sheet
+    additional-resources
+
 
 Notice
 ------

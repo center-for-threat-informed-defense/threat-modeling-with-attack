@@ -34,8 +34,11 @@ release = version
 # ones.
 extensions = [
     "sphinx_rtd_theme",
+    "sphinx_toolbox",
+    "sphinx_toolbox.github",
 ]
-
+github_username = "center-for-threat-informed-defense"
+github_repository = "threat-modeling-with-attack"
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
