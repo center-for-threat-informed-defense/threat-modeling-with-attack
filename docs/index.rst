@@ -1,4 +1,4 @@
-Threat Modeling with ATT&CK V 15.1
+Threat Modeling with ATT&CK |version|
 ==================================
 
 The process outlined in this paper details our recommended approach to integrating ATT&CK into your organization’s existing threat modeling methodology. At the core of this approach are four key questions, outlined in the Threat Modeling Manifesto, that we need to answer:

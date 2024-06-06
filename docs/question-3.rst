@@ -2,17 +2,18 @@ Question 3: What are we going to do about it?
 =============================================
 
 .. figure:: /Graphics/Question3Graphic.png
+    :alt: Question 3 Overview Graphic
     :scale: 75%
     :align: center
 
-|
+    Question 3 Overview
 
 Now that we have a prioritized list of TTPs our adversaries will likely use against our specific tech platform(s), we need to identify how our tech platform(s)’s existing security measures mitigate them. This section will provide a guide for using the Center’s Mappings Explorer  website to identify which existing security capabilities within your environment are mapped to the threats you're concerned about. If the Explorer’s existing mappings don’t fit your needs, this section will also introduce a process for mapping security controls and capabilities, native to a technology platform or mapping framework, to ATT&CK TTPs. These resources can be used to understand, assess, and record the real-world threats that security controls, within your technology platform, are able to mitigate. Using these Mappings, we can prioritize defensive investments against high priority TTPs targeting our technology platforms. Continuing with the AMPS example in Question 2, we will see which of the TTPs identified within our Azure attack tree branch are mitigated by leveraging the Azure mapping within Mappings Explorer.
 
 Mappings Explorer Overview
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Center provides a collection of mappings connecting security capabilities to the ATT&CK framework through Mappings Explorer. This website hosts a collection of open, independently developed mappings products, tools, and resources. These mappings form a bridge between the threat-informed approach to cybersecurity (Question 2) and the traditional security controls perspective.
+The Center provides a collection of mappings connecting security capabilities to the ATT&CK framework through `Mappings Explorer <https://center-for-threat-informed-defense.github.io/mappings-explorer/>`_. This website hosts a collection of open, independently developed mappings products, tools, and resources. These mappings form a bridge between the threat-informed approach to cybersecurity (Question 2) and the traditional security controls perspective.
 Mappings Explorer enables cyber defenders to understand how security controls and capabilities map onto adversary behaviors catalogued in the ATT&CK knowledge base. The website presents security control mappings and threat and mitigation data in user-friendly ways. This enables the exploration of adversary techniques and the corresponding mapped capabilities across platforms and frameworks.
 The mappings provided in Mappings Explorer are designed to provide independent data on which native security capabilities are most useful in defending against specific adversary TTPs. You will need to decide what types of capability functions are applicable for implementation in your environment and meet your threat mitigation needs.
 The security capabilities of the following frameworks mapped to ATT&CK are freely and openly available:
@@ -46,7 +47,7 @@ The Center uses a standard methodology to map security controls native to a tech
 
         * Create a mapping based on the information gathered from the previous steps.
 
-The full mapping methodology and scoring rubric are available on the Mappings Explorer website.
+The full mapping methodology and scoring rubric are available on the `Mappings Explorer website <https://center-for-threat-informed-defense.github.io/mappings-explorer/about/methodology/>`_.
 
 Creating Custom Mappings
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,8 +84,11 @@ Identify Areas of Risk
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: Graphics/Identifying_Risk.png
+    :alt: Scales of threat, defense, and risk
     :scale: 75%
     :align: center
+
+    Scales of Threat, Defense, and Risk
 
 During this step of the process, we will be combining scored threat TTPs that were compiled from the evidence and theory sections with the defensive capabilities mapped in the previous section. The example will continue to focus on the Azure platform and the TTPs associated with possible threats against the AMPS device. This step results in three navigator layers, the layers are optional and can be chosen to be completed based on the needs of the organization.
 Start by creating two navigator layers and overlaying them for a comprehensive view:
@@ -119,8 +123,12 @@ Maximum # of defensive capabilities = 15 (Password Spraying)
 .. collapse:: Example Scoring Layer
 
     .. figure:: /Graphics/ScoringLayer.svg
+        :alt: Navigator Layer for Scored TTPs
         :scale: 75%
         :align: center
+
+        Example Navigator Layer for Scored TTPs
+
     .. raw:: html
 
 
@@ -142,8 +150,12 @@ Once those two layers are completed, you overlay them to create a heat map that 
 .. collapse:: Example Defense Layer
 
     .. figure:: /Graphics/defenseLayer.svg
+        :alt: Navigator Layer for Defenses Coverage Against TTPs
         :scale: 75%
         :align: center
+
+        Example Navigator Layer for Defenses Coverage Against TTPs
+
     .. raw:: html
 
 
@@ -170,8 +182,12 @@ Once those two layers are completed, you overlay them to create a heat map that 
 .. collapse:: Example Risk Layer
 
     .. figure:: /Graphics/RiskLayer.svg
+        :alt: Navigator Layer for Risk Scoring of TTPs
         :scale: 75%
         :align: center
+
+        Example Navigator Layer for Risk Scoring of TTPs
+
     .. raw:: html
 
 
