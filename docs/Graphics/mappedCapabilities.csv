@@ -1,0 +1,84 @@
+﻿Azure Security Capability,Mapping Category,Effectiveness Score,ATT&CK ID,ATT&CK (Sub-)Technique Name
+Alerts for Windows Machines,detect,significant,T1110.003,Password Spraying
+Alerts for Windows Machines,detect,partial,T1087,Account Discovery
+Alerts for Windows Machines,detect,partial,T1110,Brute Force
+Alerts for Windows Machines,detect,partial,T1190,Exploit Public-Facing Application
+Alerts for Windows Machines,detect,partial,T1212,Exploitation for Credential Access
+Alerts for Windows Machines,detect,partial,T1078,Valid Accounts
+Azure Active Directory Password Protection,protect,partial,T1110,Brute Force
+Azure Active Directory Password Protection,protect,partial,T1110.003,Password Spraying
+Azure AD Identity Protection,respond,significant,T1110.003,Password Spraying
+Azure AD Identity Protection,respond,partial,T1078,Valid Accounts
+Azure AD Identity Protection,detect,partial,T1110.003,Password Spraying
+Azure AD Identity Protection,detect,partial,T1078,Valid Accounts
+Azure AD Identity Secure Score,protect,partial,T1110,Brute Force
+Azure AD Identity Secure Score,protect,partial,T1110.003,Password Spraying
+Azure AD Identity Secure Score,protect,partial,T1528,Steal Application Access Token
+Azure AD Multi-Factor Authentication,protect,significant,T1110,Brute Force
+Azure AD Multi-Factor Authentication,protect,significant,T1110.003,Password Spraying
+Azure AD Password Policy,protect,partial,T1110,Brute Force
+Azure AD Privileged Identity Management,protect,significant,T1098.001,Additional Cloud Credentials
+Azure AD Privileged Identity Management,protect,partial,T1098,Account Manipulation
+Azure Alerts for Network Layer,detect,significant,T1110,Brute Force
+Azure Alerts for Network Layer,detect,significant,T1110.003,Password Spraying
+Azure Automation Update Management,protect,significant,T1212,Exploitation for Credential Access
+Azure Automation Update Management,protect,partial,T1190,Exploit Public-Facing Application
+Azure Defender for App Service,detect,partial,T1190,Exploit Public-Facing Application
+Azure Defender for App Service,detect,partial,T1212,Exploitation for Credential Access
+Azure Defender for App Service,detect,partial,T1595.002,Vulnerability Scanning
+Azure Defender for Kubernetes,protect,partial,T1190,Exploit Public-Facing Application
+Azure Defender for Resource Manager,detect,partial,T1526,Cloud Service Discovery
+Azure Defender for Storage,detect,significant,T1530,Data from Cloud Storage
+Azure Firewall,protect,partial,T1595,Active Scanning
+Azure Firewall,protect,partial,T1590,Gather Victim Network Information
+Azure Firewall,protect,partial,T1018,Remote System Discovery
+Azure Firewall,protect,partial,T1595.002,Vulnerability Scanning
+Azure Key Vault,protect,partial,T1528,Steal Application Access Token
+Azure Key Vault,protect,partial,T1522,Unsecured Credentials
+Azure Network Traffic Analytics,detect,partial,T1190,Exploit Public-Facing Application
+Azure Policy,protect,partial,T1110,Brute Force
+Azure Policy,protect,partial,T1526,Cloud Service Discovery
+Azure Policy,protect,partial,T1530,Data from Cloud Storage
+Azure Policy,protect,partial,T1190,Exploit Public-Facing Application
+Azure Policy,protect,partial,T1590,Gather Victim Network Information
+Azure Policy,protect,partial,T1110.003,Password Spraying
+Azure Policy,protect,partial,T1535,Unused/Unsupported Cloud Regions
+Azure Sentinel,detect,partial,T1110,Brute Force
+Azure Sentinel,detect,partial,T1136,Create Account
+Azure Sentinel,detect,partial,T1110.003,Password Spraying
+Azure Sentinel,detect,partial,T1078,Valid Accounts
+Azure Sentinel,detect,partial,T1595.002,Vulnerability Scanning
+Azure Web Application Firewall,protect,significant,T1190,Exploit Public-Facing Application
+Azure Web Application Firewall,protect,partial,T1595,Active Scanning
+Azure Web Application Firewall,protect,partial,T1595.002,Vulnerability Scanning
+Azure Web Application Firewall,detect,significant,T1190,Exploit Public-Facing Application
+Azure Web Application Firewall,detect,partial,T1595.002,Vulnerability Scanning
+Cloud App Security Policies,protect,partial,T1119,Automated Collection
+Cloud App Security Policies,protect,partial,T1528,Steal Application Access Token
+Cloud App Security Policies,detect,partial,T1119,Automated Collection
+Cloud App Security Policies,detect,partial,T1110,Brute Force
+Cloud App Security Policies,detect,partial,T1526,Cloud Service Discovery
+Cloud App Security Policies,detect,partial,T1530,Data from Cloud Storage
+Cloud App Security Policies,detect,partial,T1110.003,Password Spraying
+Cloud App Security Policies,detect,partial,T1528,Steal Application Access Token
+Cloud App Security Policies,detect,partial,T1535,Unused/Unsupported Cloud Regions
+Cloud App Security Policies,detect,partial,T1078,Valid Accounts
+Conditional Access,protect,significant,T1110,Brute Force
+Conditional Access,protect,significant,T1110.003,Password Spraying
+File Integrity Monitoring,detect,partial,T1222,File and Directory Permissions Modification
+File Integrity Monitoring,detect,partial,T1556,Modify Authentication Process
+Integrated Vulnerability Scanner Powered by Qualys,protect,partial,T1190,Exploit Public-Facing Application
+Integrated Vulnerability Scanner Powered by Qualys,protect,partial,T1212,Exploitation for Credential Access
+Just-in-Time VM Access,protect,significant,T1110,Brute Force
+Just-in-Time VM Access,protect,significant,T1110.003,Password Spraying
+Linux auditd alerts and Log Analytics agent integration,detect,partial,T1110,Brute Force
+Linux auditd alerts and Log Analytics agent integration,detect,partial,T1110.003,Password Spraying
+Microsoft Defender for Identity,detect,significant,T1110.003,Password Spraying
+Microsoft Defender for Identity,detect,partial,T1098,Account Manipulation
+Microsoft Defender for Identity,detect,partial,T1110,Brute Force
+Passwordless Authentication,protect,significant,T1110,Brute Force
+Passwordless Authentication,protect,significant,T1110.003,Password Spraying
+Role Based Access Control,protect,partial,T1098,Account Manipulation
+Role Based Access Control,protect,partial,T1098.001,Additional Cloud Credentials
+Role Based Access Control,protect,partial,T1530,Data from Cloud Storage
+Role Based Access Control,protect,partial,T1528,Steal Application Access Token

@@ -1,30 +1,18 @@
-.. _RST Question 1:
-
+.. _Question 1:
 Question 1: What are we working on?
 ===================================
+
 .. figure:: /Graphics/question1Graphic.png
   :alt: Question 1 Overview
-  :scale: 100%
+  :scale: 30%
   :align: center
 
-  Question 1 Overview Graphic
+  Question 1 Overview Graphic (Click to Enlarge)
 
 Question 1 enables the primary and secondary function(s) of the system to be identified and analyzed. It identifies critical tasks that must be performed for the system to successfully accomplish its function(s) and highlights the resources those critical tasks rely upon.
 
-Challenges faced by stakeholders
---------------------------------
-* Modeling a system takes time. Having a (repeatable) process for doing so has direct
-  time and resource benefits.
-* Creating a systematic process for threat modeling.
-* Improving the speed of the threat modeling process.
-* Determining a systematic approach to threat modeling that is environment agnostic.
-* Scaling up the threat modeling process to larger (e.g. 5,000+ machine) systems.
-
-
 Part 1: Assemble your team
 --------------------------
-
-**Goal:**  Educate and grow your team
 
 Step 1: Gather relevant documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,7 +53,6 @@ These individuals are your subject matter experts who will provide insights into
 #. Pre-mortem
 
    * Imagine a crisis scenario: the assessed system is inoperable; the timeline for project development has broken down; you’re unable to provide a key service to your customers, etc. Who do you call? What information do you need?
-   * Responsible, Accountable, Consulted, and Informed (RACI) Matrix
 
 #. Responsible, Accountable, Consulted, and Informed (RACI) Matrix
 
@@ -90,8 +77,6 @@ After conducting your kick-off meeting, it's time to start conducting an analysi
 
 Step 1: Map the mission objectives
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Goal:**  Establish core objective
-
 At this stage we want to determine: What is the ultimate purpose of the system? What goal is the system trying to accomplish?
 It’s here that we’ll invoke our fictional example device: the Ankle Monitoring Predictor of Stroke (AMPS). This fabricated IoT device is borrowed from MITRE’s `Playbook for Threat Modeling Medical Devices <https://www.mitre.org/sites/default/files/2021-11/Playbook-for-Threat-Modeling-Medical-Devices.pdf>`_. In our scenario, this device is meant to be worn by a patient who is at increased risk of experiencing a stroke. By wearing the device throughout the day, the patient and their doctor can monitor for indicators of an imminent stroke via a companion app on the patient’s phone and readings uploaded to the AMPS cloud service each day.
 As a security team evaluating AMPS for its manufacturer, we identified that a core mission objective of AMPS is to collect and share patient health data accurately and securely. Because of the sensitive nature of the health data AMPS collects and shares, which includes location data to guide an emergency response in the event of a stroke, the AMPS device should effectively protect the confidentiality of that data.
@@ -103,7 +88,6 @@ As a security team evaluating AMPS for its manufacturer, we identified that a co
 
 Step 2: Identify Operational Tasks (Cross Functional Flow Chart)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Goal:** Planning your routes
 Next, leverage the knowledge pooled from stakeholders to determine the different operational sub-systems that contribute to the system’s primary purpose identified in Step 1. An Analytic Hierarchy Process (AHP) can be used to weigh the importance of different operational systems. Ask yourself, what are the operational tasks that must be executed to perform that function? These are also known as Mission Essential Functions (MEFs). To visualize these MEFs, we recommend using a cross functional flow chart like the one below for the AMPS.
 
 .. figure:: /Graphics/4.png
@@ -115,8 +99,6 @@ Next, leverage the knowledge pooled from stakeholders to determine the different
 
 Part 3: System Decomposition
 ----------------------------
-**Goal:** Mapping your routes through the system
-
 Step 3: Develop a Data Flow Diagram (DFD) of your system.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 There are multiple ways to design a DFD, but we recommend the `DFD3 <https://github.com/adamshostack/DFD3>`_ standard. Begin by answering the following questions:
@@ -158,13 +140,10 @@ With the DFD of your system in hand, you can then link the system’s operationa
 
 Part 4: Identification of critical assets
 -----------------------------------------
-**Goal:** Find your system’s chokepoints
 Now that you’ve done mission and system decomposition, you should have a much better idea of which system functions facilitate operational tasks that enable your mission. Using your DFD and the matrix from Part 7, you can now identify critical assets. Ask yourself the following questions:
 
 * Which system assets and dataflows are shared by multiple processes?
 * What assets and data flows enable different system functions?
-
-   * Establish mission dependencies.
 * How does the failure of each operational task impact the system’s mission objectives?
 * What are downstream effects of taking each cyber asset offline?
 

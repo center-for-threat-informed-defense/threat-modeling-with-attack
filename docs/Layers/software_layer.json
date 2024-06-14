@@ -2,7 +2,7 @@
 	"name": "Software Layer",
 	"versions": {
 		"attack": "15",
-		"navigator": "5.0.0",
+		"navigator": "5.0.1",
 		"layer": "4.5"
 	},
 	"domain": "enterprise-attack",
@@ -355,16 +355,6 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1059",
-			"tactic": "execution",
-			"color": "#6baed6",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
 			"techniqueID": "T1059.005",
 			"tactic": "execution",
 			"color": "#6baed6",
@@ -527,46 +517,6 @@
 		{
 			"techniqueID": "T1559.002",
 			"tactic": "execution",
-			"color": "#6baed6",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T1078",
-			"tactic": "defense-evasion",
-			"color": "#6baed6",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T1078",
-			"tactic": "persistence",
-			"color": "#6baed6",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T1078",
-			"tactic": "privilege-escalation",
-			"color": "#6baed6",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T1078",
-			"tactic": "initial-access",
 			"color": "#6baed6",
 			"comment": "",
 			"enabled": true,

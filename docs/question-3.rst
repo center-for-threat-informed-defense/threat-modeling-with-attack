@@ -1,22 +1,30 @@
+.. _Question 3:
 Question 3: What are we going to do about it?
 =============================================
 
 .. figure:: /Graphics/Question3Graphic.png
     :alt: Question 3 Overview Graphic
-    :scale: 75%
+    :scale: 30%
     :align: center
 
-    Question 3 Overview
+    Question 3 Overview (Click to Enlarge)
 
 Now that we have a prioritized list of TTPs our adversaries will likely use against our specific tech platform(s), we need to identify how our tech platform(s)’s existing security measures mitigate them. This section will provide a guide for using the Center’s Mappings Explorer  website to identify which existing security capabilities within your environment are mapped to the threats you're concerned about. If the Explorer’s existing mappings don’t fit your needs, this section will also introduce a process for mapping security controls and capabilities, native to a technology platform or mapping framework, to ATT&CK TTPs. These resources can be used to understand, assess, and record the real-world threats that security controls, within your technology platform, are able to mitigate. Using these Mappings, we can prioritize defensive investments against high priority TTPs targeting our technology platforms. Continuing with the AMPS example in Question 2, we will see which of the TTPs identified within our Azure attack tree branch are mitigated by leveraging the Azure mapping within Mappings Explorer.
 
 Mappings Explorer Overview
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Center provides a collection of mappings connecting security capabilities to the ATT&CK framework through `Mappings Explorer <https://center-for-threat-informed-defense.github.io/mappings-explorer/>`_. This website hosts a collection of open, independently developed mappings products, tools, and resources. These mappings form a bridge between the threat-informed approach to cybersecurity (Question 2) and the traditional security controls perspective.
+The Center provides a collection of mappings connecting security capabilities to the MITRE ATT&CK® framework through `Mappings Explorer <https://center-for-threat-informed-defense.github.io/mappings-explorer/>`_. This website hosts a collection of open, independently developed mappings products, tools, and resources. These mappings form a bridge between the threat-informed approach to cybersecurity (Question 2) and the traditional security controls perspective.
 Mappings Explorer enables cyber defenders to understand how security controls and capabilities map onto adversary behaviors catalogued in the ATT&CK knowledge base. The website presents security control mappings and threat and mitigation data in user-friendly ways. This enables the exploration of adversary techniques and the corresponding mapped capabilities across platforms and frameworks.
 The mappings provided in Mappings Explorer are designed to provide independent data on which native security capabilities are most useful in defending against specific adversary TTPs. You will need to decide what types of capability functions are applicable for implementation in your environment and meet your threat mitigation needs.
 The security capabilities of the following frameworks mapped to ATT&CK are freely and openly available:
+
+.. figure:: /Graphics/mappingsExplorer.png
+    :alt: Question 3 Overview Graphic
+    :scale: 70%
+    :align: center
+
+    Question 3 Overview
 
 You can use Mappings Explorer for many different purposes. In this document, we will focus on using the mappings to align cyber defenses to threats by identifying security capabilities mapped to detect, defend against, or respond to specific technology platform-based branches of our attack trees. Later in this section, we will use these resources to visualize and assess defensive coverage to identify deficiencies and plan policy and security capability implementation around adversary TTPs from Question 2.
 
@@ -74,11 +82,25 @@ Azure security capability mappings fall under Security Stack Mappings, which inc
 Typically, it is recommended that capability mappings scored as Partial or Significant effectiveness at mitigating the behavior described by a (sub-) technique, be considered for implementation. If you are inclined to include a capability scored as Minimal effectiveness, carefully consider whether this control would actually be a practical means of mitigating the threat. Often, minimally scored controls could technically mitigate the behavior but in the real world would not be used for that purpose. In that case, the recommendation would be to exclude it.
 Using Mappings Explorer data and looking at each of the specific TTPs identified in Q2, we identify the Azure security capabilities mappings as listed in the table below. Native Azure capabilities scored as significant or partial effectiveness for protecting against, detecting, or responding to the TTP are included, resulting in a total of 83 mappings. Note: The TTPs with strike-throughs are ones we did not score in Q2 due to time limitation but these would typically be used too.
 
-**INSERT TABLE HERE**
+.. collapse:: Table of Azure Capabilities Mappings by Technique
+
+    .. csv-table:: Azure Capabilities Mappings by Technique
+        :file: Graphics/mappedTechniques.csv
+        :widths: 10, 10, 10, 10, 10
+        :header-rows: 1
+
+|
 
 The next table presents the Azure Security Capability mappings that can provide mitigation for the ATT&CK TTPs identified in Q2. The included capabilities were scored as being significant or partial effectiveness for each of the mapping categories of protect, detect, and respond in relation to the mapped technique.
 
-**INSERT SECOND TABLE HERE**
+.. collapse:: Table of Azure Capabilities Mappings by Capability
+
+    .. csv-table:: Azure Capabilities Mappings by Capability
+        :file: Graphics/mappedCapabilities.csv
+        :widths: 10, 10, 10, 10, 10
+        :header-rows: 1
+
+|
 
 Identify Areas of Risk
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -133,9 +155,6 @@ Maximum # of defensive capabilities = 15 (Password Spraying)
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
             <a class="btn btn-primary" target="_blank" href="..\Scoring_Layer_Final.json" download="Scoring_Layer_Final.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
@@ -149,7 +168,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
 
 .. collapse:: Example Defense Layer
 
-    .. figure:: /Graphics/defenseLayer.svg
+    .. figure:: /Layers/Protection_Layer.svg
         :alt: Navigator Layer for Defenses Coverage Against TTPs
         :scale: 75%
         :align: center
@@ -160,10 +179,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
-            <a class="btn btn-primary" target="_blank" href="..\protection_layer_Final.json" download="protection_layer_Final.json">
+            <a class="btn btn-primary" target="_blank" href="..\Protection_Layer.json" download="Protection_Layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -192,20 +208,17 @@ Once those two layers are completed, you overlay them to create a heat map that 
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
             <a class="btn btn-primary" target="_blank" href="..\Risk_Layer_Final.json" download="Risk_Layer_Final.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
 |
 
-.. collapse:: Scoring, Defense, and Risk Layer Video Walkthrough
+The video below walks through an example of building a scoring, defense, and risk layer.
 
-    .. raw:: html
+.. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |
 
@@ -213,6 +226,9 @@ Implementing Mitigations to Risks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At this stage, by leveraging the Mapping Explorer or crafting mappings of our own, we understand the mitigations within our environment and the degree to which each addresses the threats we are likely to face. By implementing these specific Azure controls, that we’ve mapped to our relevant threat TTPs, we’ve significantly reduced the potential impact of an attack.
-By reviewing our overlayed Navigator layers, we can see that several TTPs, such as “Valid Accounts” (T1078), even with existing mitigations implemented within our Azure environment, remains a high risk to our system. Addressing these latent risks is a priority and your team may already have applicable controls they are aware. If you and your team can’t think of additional fixes to these threats, we recommend using the Center’s mappings of NIST 800-53. 800-53 is a list of security and privacy controls for information systems that, if implemented, can address the latent risk posed by our remaining threats.
+
+By reviewing our overlayed Navigator layers, we can see that several TTPs, such as “Valid Accounts” (T1078), even with existing mitigations implemented within our Azure environment, remains a high risk to our system. Addressing these latent risks is a priority and your team may already have applicable controls they are aware of. If you and your team can’t think of additional fixes to these threats, we recommend using the Center’s mappings of NIST 800-53. 800-53 is a list of security and privacy controls for information systems that, if implemented, can address the latent risk posed by our remaining threats.
+
 The Valid Account technique T1078, for example, is mapped to several 800-53 controls. These include information Exchange, Usage Restrictions, Boundary Protection and many more. These controls represent best practices that can be adopted within your system to better protect against your remaining high risk TTPs. In our case, one mitigation might be changing existing policies within the environment to achieve “least functionality.” This can be done by ensuring component functionality is limited to a single function per component, removing unused or unnecessary software, or limiting unnecessary physical and logical ports and protocols to prevent unauthorized connection of components, transfer of information, and tunneling. These mitigations can further be tailored to fit your given system by collaborating with your team on potential implementations.
+
 This mapping gives us best practices derived from NIST 800-53 to implement additional protections tailored to the risks within our system. Tailored changes constitute our best approach for securing our system against potential exploits.
