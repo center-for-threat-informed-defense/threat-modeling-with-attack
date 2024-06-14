@@ -7,6 +7,7 @@ Threat Modeling with ATT&CK |version|
   :align: center
 
 |
+
 Threat Modeling with ATT&CK provides a recommended approach that integrates the common language that security operations teams rely upon - `MITRE ATT&CK® <https://attack.mitre.org/>`_ - into their organization’s threat modeling practices. Creating an approach to threat modeling that integrates ATT&CK enables cyber defenders to focus on the activity of threat modeling with a clear, consistent understanding of adversary behaviors and tailor defensive investments to mitigate threats related to their systems or environments.
 At the core of this approach are four key questions, outlined in the `Threat Modeling Manifesto <https://www.threatmodelingmanifesto.org/>`_, that we need to answer:
 Question 1: What are we working on?
