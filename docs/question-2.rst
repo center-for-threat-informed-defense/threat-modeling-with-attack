@@ -5,7 +5,7 @@ Question 2: What could go wrong?
 
 .. figure:: /Graphics/Question2Graphic.png
     :alt: Question 2 overview graphic
-    :scale: 30%
+    :scale: 25%
     :align: center
 
     Question 2 Overview (Click to Enlarge)

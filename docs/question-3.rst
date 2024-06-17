@@ -5,7 +5,7 @@ Question 3: What are we going to do about it?
 
 .. figure:: /Graphics/Question3Graphic.png
     :alt: Question 3 Overview Graphic
-    :scale: 30%
+    :scale: 25%
     :align: center
 
     Question 3 Overview (Click to Enlarge)

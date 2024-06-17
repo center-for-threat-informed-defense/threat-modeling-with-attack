@@ -5,7 +5,7 @@ Question 4: Did we do a good job?
 
 .. figure:: /Graphics/question4Graphic.png
     :alt: Question 4 Overview Graphic
-    :scale: 30%
+    :scale: 25%
     :align: center
 
     Question 4 Overview (Click to Enlarge)

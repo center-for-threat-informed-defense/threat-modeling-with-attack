@@ -2,7 +2,7 @@ Introduction
 ============
 .. figure:: /Graphics/introGraphic.png
     :alt: Threat Modeling with ATT&CK Overview Graphic
-    :scale: 30%
+    :scale: 25%
     :align: center
 
     Threat Modeling with ATT&CK Overview (Click to Enlarge)
