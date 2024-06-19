@@ -3,7 +3,7 @@
 Question 4: Did we do a good job?
 =================================
 
-.. figure:: /Graphics/question4Graphic.png
+.. figure:: /_static/question4graphic.png
     :alt: Question 4 Overview Graphic
     :scale: 25%
     :align: center

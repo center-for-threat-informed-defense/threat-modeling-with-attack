@@ -3,7 +3,7 @@
 Question 3: What are we going to do about it?
 =============================================
 
-.. figure:: /Graphics/Question3Graphic.png
+.. figure:: /_static/question3graphic.png
     :alt: Question 3 Overview Graphic
     :scale: 25%
     :align: center
@@ -20,7 +20,7 @@ Mappings Explorer enables cyber defenders to understand how security controls an
 The mappings provided in Mappings Explorer are designed to provide independent data on which native security capabilities are most useful in defending against specific adversary TTPs. You will need to decide what types of capability functions are applicable for implementation in your environment and meet your threat mitigation needs.
 The security capabilities of the following frameworks mapped to ATT&CK are freely and openly available:
 
-.. figure:: /Graphics/mappingsExplorer.png
+.. figure:: /_static/mappingsexplorer.png
     :alt: Question 3 Overview Graphic
     :scale: 70%
     :align: center
@@ -86,7 +86,7 @@ Using Mappings Explorer data and looking at each of the specific TTPs identified
 .. collapse:: Table of Azure Capabilities Mappings by Technique
 
     .. csv-table:: Azure Capabilities Mappings by Technique
-        :file: Graphics/mappedTechniques.csv
+        :file: _static/mappedtechniques.csv
         :widths: 10, 10, 10, 10, 10
         :header-rows: 1
 
@@ -97,7 +97,7 @@ The next table presents the Azure Security Capability mappings that can provide 
 .. collapse:: Table of Azure Capabilities Mappings by Capability
 
     .. csv-table:: Azure Capabilities Mappings by Capability
-        :file: Graphics/mappedCapabilities.csv
+        :file: _static/mappedcapabilities.csv
         :widths: 10, 10, 10, 10, 10
         :header-rows: 1
 
@@ -106,7 +106,7 @@ The next table presents the Azure Security Capability mappings that can provide 
 Identify Areas of Risk
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: Graphics/Identifying_Risk.png
+.. figure:: _static/identifying_risk.png
     :alt: Scales of threat, defense, and risk
     :scale: 75%
     :align: center
@@ -145,7 +145,7 @@ Maximum # of defensive capabilities = 15 (Password Spraying)
 
 .. collapse:: Example Scoring Layer
 
-    .. figure:: /Graphics/ScoringLayer.svg
+    .. figure:: /_static/scoringlayer.svg
         :alt: Navigator Layer for Scored TTPs
         :scale: 75%
         :align: center
@@ -156,7 +156,7 @@ Maximum # of defensive capabilities = 15 (Password Spraying)
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..\Scoring_Layer_Final.json" download="Scoring_Layer_Final.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\scoring_layer.json" download="scoring_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -169,7 +169,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
 
 .. collapse:: Example Defense Layer
 
-    .. figure:: /Layers/Protection_Layer.svg
+    .. figure:: /_static/protection_layer.svg
         :alt: Navigator Layer for Defenses Coverage Against TTPs
         :scale: 75%
         :align: center
@@ -180,7 +180,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..\Protection_Layer.json" download="Protection_Layer.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\protection_layer.json" download="protection_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -198,7 +198,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
 
 .. collapse:: Example Risk Layer
 
-    .. figure:: /Graphics/RiskLayer.svg
+    .. figure:: /_static/risklayer.svg
         :alt: Navigator Layer for Risk Scoring of TTPs
         :scale: 75%
         :align: center
@@ -209,7 +209,7 @@ Once those two layers are completed, you overlay them to create a heat map that 
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..\Risk_Layer_Final.json" download="Risk_Layer_Final.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\risk_layer.json" download="risk_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 

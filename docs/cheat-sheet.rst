@@ -7,7 +7,7 @@ Condensed Process
 :ref:`Question 1`
 -------------------
 
-.. figure:: /Graphics/condensedProcess1.png
+.. figure:: /_static/condensedprocess1.png
   :alt: Data Flow Diagram Outline
   :scale: 100%
   :align: right
@@ -21,7 +21,7 @@ Identify critical components and dataflows that, when impacted, would result in 
 :ref:`Question 2`
 -------------------
 
-.. figure:: /Graphics/condensedProcess2.png
+.. figure:: /_static/condensedprocess2.png
   :alt: Attack Tree Outline
   :scale: 100%
   :align: left
@@ -41,7 +41,7 @@ Once you’ve got your list of brainstormed TTPs, search through your existing s
 -------------------
 Implement the mitigations listed within the ATT&CK page for each brainstormed TTP
 
-.. figure:: /Graphics/condensedProcess3.png
+.. figure:: /_static/condensedprocess3.png
   :alt: ATT&CK Mitigations Outline
   :scale: 100%
   :align: center
@@ -52,7 +52,7 @@ Implement the mitigations listed within the ATT&CK page for each brainstormed TT
 
 Implement the NIST 800-53 controls for each brainstormed TTP using the MITRE Engenuity Mappings Explorer
 
-.. figure:: /Graphics/condensedProcess4.png
+.. figure:: /_static/condensedprocess4.png
   :alt: Mappings Explorer Outline
   :scale: 100%
   :align: center
@@ -63,7 +63,7 @@ Implement the NIST 800-53 controls for each brainstormed TTP using the MITRE Eng
 :ref:`Question 4`
 -------------------
 
-.. figure:: /Graphics/condensedProcess5.png
+.. figure:: /_static/condensedprocess5.png
   :alt: Reevaluate Graphic
   :scale: 100%
   :align: right

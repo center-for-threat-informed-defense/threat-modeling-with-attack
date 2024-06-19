@@ -1,7 +1,7 @@
 Threat Modeling with ATT&CK |version|
 =====================================
 
-.. figure:: /Graphics/ProjectPhoto.PNG
+.. figure:: /_static/projectphoto.png
   :alt: Project Photo
   :scale: 30%
   :align: center
