@@ -1,12 +1,14 @@
+.. _Question 4:
+
 Question 4: Did we do a good job?
 =================================
 
-.. figure:: /Graphics/question4Graphic.png
+.. figure:: /_static/question4graphic.png
     :alt: Question 4 Overview Graphic
-    :scale: 75%
+    :scale: 25%
     :align: center
 
-    Question 4 Overview
+    Question 4 Overview (Click to Enlarge)
 
 As you continue with your system’s development or sustainment process, threat model in hand, your team can make use of a variety of approaches to evaluate the success of your Q3 mitigations.
 

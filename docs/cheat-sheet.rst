@@ -1,34 +1,74 @@
-Cheat Sheet
-===========
+Condensed Process
+=================
 
 .. note::
-    This cheat sheet can be used to save time throughout the threat modeling process outlined, but is it important to understand the full process prior to choosing this version. Please review Questions 1 through 4 before choosing this route.
+    This Condensed Process should only be used if your team has limited time to conduct threat modeling (days instead of weeks). Before using, please review Questions 1 through 4 of the uncondensed process.
 
-What are we working on?
------------------------
+:ref:`Question 1`
+-------------------
 
-* Develop a top level DFD for your system
-* Identify critical components
+.. figure:: /_static/condensedprocess1.png
+  :alt: Data Flow Diagram Outline
+  :scale: 100%
+  :align: right
 
-What could go wrong?
---------------------
+  Data Flow Diagram Outline
 
-* Analyze your DFD using a simple attack tree or STRIDE
-* Brainstorm ATT&CK TTPs that could be used to attack the critical components within your DFD
+Develop a top-level Dataflow Diagram for your system
 
-    * Gather ideas from TTPs used against your tech platform previously- see ATT&CK matrix and down select by platform
-* Quick search through existing security stack for ability to defend against these brainstormed TTPs
+Identify critical components and dataflows that, when impacted, would result in mission failure
 
-What are we going to do about it?
----------------------------------
+:ref:`Question 2`
+-------------------
 
-* Implement the mitigations listed within the ATT&CK page for each TTP
+.. figure:: /_static/condensedprocess2.png
+  :alt: Attack Tree Outline
+  :scale: 100%
+  :align: left
 
-    **OR**
+  Attack Tree Outline
 
-* Implement the NIST 800-53 controls for each TTP using the MITRE Engenuity Mappings Explorer
+Analyze your DFD using a structured brainstorming technique (Attack Tree, STRIDE, etc.)
 
-Did we do a good job?
----------------------
+Brainstorm ATT&CK TTPs that could be used to attack the critical components within your DFD
 
-* Periodically repeat this process to evaluate your existing mitigations and make sure they are in sync with the development of your system.
+You can gather ideas from TTPs previously used against your tech platform – see the ATT&CK matrix and select by platform
+or use the Center’s Top ATT&CK Techniques Calculator.
+
+Once you’ve got your list of brainstormed TTPs, search through your existing security stack for ability to defend against them.
+
+:ref:`Question 3`
+-------------------
+Implement the mitigations listed within the ATT&CK page for each brainstormed TTP
+
+.. figure:: /_static/condensedprocess3.png
+  :alt: ATT&CK Mitigations Outline
+  :scale: 100%
+  :align: center
+
+  ATT&CK Mitigations Outline
+
+	**OR**
+
+Implement the NIST 800-53 controls for each brainstormed TTP using the MITRE Engenuity Mappings Explorer
+
+.. figure:: /_static/condensedprocess4.png
+  :alt: Mappings Explorer Outline
+  :scale: 100%
+  :align: center
+
+  Mappings Explorer Outline
+
+
+:ref:`Question 4`
+-------------------
+
+.. figure:: /_static/condensedprocess5.png
+  :alt: Reevaluate Graphic
+  :scale: 100%
+  :align: right
+
+  Reevaluate
+
+Periodically repeat this process to evaluate your existing mitigations and make sure they are in sync with the development of your system.
+

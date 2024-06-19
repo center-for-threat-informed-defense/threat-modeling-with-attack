@@ -1,23 +1,25 @@
+.. _Question 2:
+
 Question 2: What could go wrong?
 ================================
 
-.. figure:: /Graphics/Question2Graphic.png
+.. figure:: /_static/question2graphic.png
     :alt: Question 2 overview graphic
-    :scale: 75%
+    :scale: 25%
     :align: center
 
-    Question 2 Overview
+    Question 2 Overview (Click to Enlarge)
 
-The process outlined in Question 1 derives critical assets within a particular system. In Question 2, we identify and prioritize threats to those assets. ATT&CK will serve as the framework through which we map and discuss threats to our system. While our analysis will go beyond the tactics, techniques, and procedures (TTPs) found within ATT&CK, its value as a language for detailing adversary behaviors makes it a central part of our approach. ATT&CK’s widespread use within the CTI community and its comprehensive classification system allow us to draw upon existing threat data while still integrating additional threats not yet captured in public reporting.
+The process outlined in Question 1 derives critical assets within a particular system. In Question 2, we identify and prioritize threats to those assets. MITRE ATT&CK® will serve as the framework through which we map and discuss threats to our system. While our analysis will go beyond the tactics, techniques, and procedures (TTPs) found within ATT&CK, its value as a language for detailing adversary behaviors makes it a central part of our approach. ATT&CK’s widespread use within the CTI community and its comprehensive classification system allow us to draw upon existing threat data while still integrating additional threats not yet captured in public reporting.
 
-For more information on MITRE ATT&CK, see `these resources <https://attack.mitre.org/resources/learn-more-about-attack/>`_.
+For more information on ATT&CK, see `these resources <https://attack.mitre.org/resources/learn-more-about-attack/>`_.
 
 Theory vs. Evidence
 -------------------
 
 Generally, there are two complementary approaches that can be utilized to perform threat analysis: **Theoretical Modeling**, and **Evidence-based Analysis**. Regardless of which threat modeling methodology you use to answer Question 2, you will need to strike a balance between these two approaches for your model to be effective. Both approaches handle different aspects of the threat landscape, directly addressing the potential (“Could” and “Could not”) and the possible (“Has” and “Has not”) threats that concern your system.
 
-.. figure:: /Graphics/theoryvsEvidence.png
+.. figure:: /_static/theoryvsevidence.png
     :alt: Theory vs Evidence Rationale Table
     :scale: 25%
     :align: center
@@ -36,7 +38,7 @@ The two axes on the above table represent the theoretical and evidence-based out
 
 When considered together, these two approaches give a well-rounded view of a system’s security posture, for both known and unknown threats.
 
-.. figure:: /Graphics/10.png
+.. figure:: /_static/10.png
     :alt: Theory and Evidence Scale
     :scale: 80%
     :align: center
@@ -67,7 +69,7 @@ An attack tree is a threat modeling technique that allows analysts to map the va
 
 Attack trees typically represent the flow of attacker actions in two ways: top-down or bottom-up. The attack tree below relies on a bottom-up approach and will serve as our template moving forward. This tree captures the sequential pathways an attack could, and in some cases must, take to reach its objective. Regardless of the attacker's intention, any adversary seeking to exploit a given system must achieve these intermediate goals. In this manner, the tree is agnostic towards the attacker’s subsequent goals.
 
-.. figure:: /Graphics/11.png
+.. figure:: /_static/11.png
     :alt: Example of Bottom-Up Attack Tree and One of its Isolated Sub-Trees
     :scale: 50%
     :align: center
@@ -78,7 +80,7 @@ Here we see a theoretical attack tree for a thief attempting to burgle a house. 
 
 The origin point of the tree is the kernel, or root node, the ultimate objective of the attacker that sits at the top of the tree (in the example above, the root node of the tree is “Burgle House”). The attacker works their way towards that objective by satisfying the intermediate goals that branch out from the root node. Each branch represents a different exploitation strategy that can or must be employed to achieve the ultimate objective. In some cases, a particular strategy (branch) must be executed to allow another strategy to move forward.
 
-.. figure:: /Graphics/12.png
+.. figure:: /_static/12.png
     :alt: Attack Tree design language
     :scale: 50%
     :align: center
@@ -107,14 +109,14 @@ Part 2: Critical Path Analysis
 
 In this step, just as we mapped system processes to critical assets in Question 1, we’re taking the theoretical attacks we’ve brainstormed and associating them with critical paths and components.
 
-.. figure:: /Graphics/13.png
+.. figure:: /_static/13.png
     :alt: Bottom-up Simple Attack Tree
     :scale: 50%
     :align: left
 
     Bottom-up Simple Attack Tree
 
-.. figure:: /Graphics/14.png
+.. figure:: /_static/14.png
     :alt: AMPS location information alongside Mid-Level DFD of relevant critical assets
     :scale: 65%
     :align: right
@@ -126,7 +128,7 @@ As we establish these associations between threats and assets, we’ll begin dis
 In the example below, we’ve created an attack tree and populated it with theoretical threats against our AMPS device. In Question 1, we said collecting and securely storing patient data was essential to our product. We’ve therefore made the goal of our attack tree stealing patient sensor data, specifically user location data. We’ve spoken with our team, trawled academic literature, reviewed blog posts by industry professionals, and watched presentations by security experts to create an initial set of theoretical threats to our device.
 Another resource we reviewed was MITRE’s `EMB3D threat knowledge base <https://emb3d.mitre.org/properties-list/>`_, which worked great to break down the AMPS device by its properties and the specific threats to each. For more help brainstorming insider threat behaviors, take a look at the Center’s `insider threat knowledge base <https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/introduction/>`_. Taken together, all this research gives us an initial list of threats we can then associate with our critical assets. See the AMPS attack tree below for an example of the compiled theoretical threats against our critical assets.
 
-.. figure:: /Graphics/15.png
+.. figure:: /_static/15.png
     :alt: Example AMPS attack tree mapped to our critical assets
     :scale: 65%
     :align: center
@@ -137,7 +139,7 @@ Part 3: Translating Attack Tree Concepts into ATT&CK TTPs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Goal:** Use ATT&CK as a common language to describe adversarial behaviors against your system
 
-.. figure:: /Graphics/16.png
+.. figure:: /_static/16.png
     :alt: Example of an ATT&CK Framework
     :scale: 75%
     :align: center
@@ -150,7 +152,7 @@ This step is essentially the manual translation of Part 2’s conceptual attack 
 
 Below is an example of how a theoretical attack can be aligned with a TTP (Browser Session Hijacking T1185).
 
-.. figure:: /Graphics/17.png
+.. figure:: /_static/17.png
     :alt: Browser Session Hijacking Node Closeup
     :scale: 50%
     :align: right
@@ -163,7 +165,7 @@ Ultimately, we will be integrating these threats into a singular tree using the 
 
 An example of the AMPS attack tree and all associated TTPs can be found below.
 
-.. figure:: /Graphics/18.png
+.. figure:: /_static/18.png
     :alt: Example AMPS Attack Tree Converted into Attack Flow
     :scale: 75%
     :align: center
@@ -174,9 +176,9 @@ Evidence
 ---------
 
 .. note::
-  Throughout the evidence section for the purpose of saving time layers can be omitted. For the sake of evidence being incorporated it is recommended to include at least one of the layers for data, but which is up to the needs of the organization.
+  To save time in this section, layers can be omitted. We recommend organizations include at least the tech platform layer.
 
-The previous section focused on a theory-based approach using attack trees. In this section, we will cover the evidence-based approach to complement our theoretical tree and aid in identifying additional TTPs for consideration in the tree. Evidence is derived by attacks observed in the wild and reported on by legitimate sources. The MITRE ATT&CK team reads open-source reports published by these sources and associates adversarial behavior with a TTP. Sources for these TTPs are different from those previously used to build the theory-based attack tree, which is why the complementary approach of theory and evidence is crucial. We will use the TTPs derived in this section to add to the attack tree in the previous section. We recommend considering TTPs derived by four types of observed behavior.
+The previous section focused on a theory-based approach using attack trees. In this section, we will cover the evidence-based approach to complement our theoretical tree and aid in identifying additional TTPs for consideration in the tree. Evidence is derived by attacks observed in the wild and reported on by legitimate sources. The ATT&CK team reads open-source reports published by these sources and associates adversarial behavior with a TTP. Sources for these TTPs are different from those previously used to build the theory-based attack tree, which is why the complementary approach of theory and evidence is crucial. We will use the TTPs derived in this section to add to the attack tree in the previous section. We recommend considering TTPs derived by four types of observed behavior.
 
 #. TTPs used against your Technology Platform(s)
 #. TTPs used by Threat Actor(s) targeting your Industry
@@ -185,11 +187,11 @@ The previous section focused on a theory-based approach using attack trees. In t
 
 Throughout this section, we break down each type of observed behavior and demonstrate how to use the TTPs describing this behavior in your attack tree. We will continue to use AMPS in all examples.
 
-Multiple technology platforms were identified in our attack tree. For the purposes of this paper, however, we will only be using observed TTPs related to the cloud platform (Azure) branch of the attack tree.
+Multiple technology platforms were identified in our attack tree. For the purposes of this project, however, we will only be using observed TTPs related to the cloud platform (Azure) branch of the attack tree.
 
 As we walk through this section and explain how to generate TTPs from each of the four types of observed behaviors above, we will start to compile a consolidated list of TTPs pertinent to branches of our tree (in this case the Azure branch). These TTPs will be compiled in the form of ATT&CK Navigator Layers. The figure below shows the process of stacking the multiple ATT&CK Navigator Layers derived from each category of data. The information gathered in this section will also support scoring in the following section.
 
-.. figure:: /Graphics/19.png
+.. figure:: /_static/19.png
     :alt: Layered Steps to Form Collection of TTPS
     :scale: 50%
     :align: right
@@ -218,7 +220,7 @@ Below is an ATT&CK Navigator view showing the TTPs linked to Azure AD. Throughou
 
     **This ATT&CK Navigator view shows the TTPs linked to Azure AD. Throughout this evidence section, we will down-select off of these TTPs.**
 
-    .. figure:: /Graphics/Platform_Layer.svg
+    .. figure:: /_static/platform_layer.svg
         :alt: Example ATT&CK Navigator Layer for Azure AD
         :scale: 75%
         :align: center
@@ -228,10 +230,7 @@ Below is an ATT&CK Navigator view showing the TTPs linked to Azure AD. Throughou
     .. raw:: html
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
-            <a class="btn btn-primary" target="_blank" href="..\platform_layer.json" download="platform_layer.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\platform_layer.json" download="platform_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -240,13 +239,13 @@ Below is an ATT&CK Navigator view showing the TTPs linked to Azure AD. Throughou
 Layer 2: Threat Actor (TA) TTPs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Goal:** Compile a list of TTPs that have been used by a threat group/s targeting your industry
+**Goal:** Compile a list of TTPs that have been used by a threat actor/s targeting your industry
 
 If time permits, we also recommend generating threat profiles to characterize the adversaries, or groups, that are likely to target your industry and therefore your system. This information will also help in prioritizing threats in your attack tree later.
 
 To get started with threat actors that are relevant to your organization, consider any threat actors that have been known to be a concern in the past, or have been mentioned recently as a concern to your organization. It is always a good idea to consider threat actors that have previously been a threat to your organization since they are known to you. Ask your stakeholders if there are any TAs they are concerned with too.
 
-The ATT&CK Groups knowledge base can be a good starting point for any team. The `Groups <https://attack.mitre.org/groups/>`_ page gives an overview of all the TAs reported publicly. Although many CTI vendors have their own naming structure, MITRE Groups is an attempt at combining these TAs under a single naming convention. On this page, you can “CTL + F” to look for groups relevant to you. Some focus areas to search for might be location (i.e., United States, Iran, China) or industry (i.e., financial, government, retail); both searches help to narrow down threat actors important to your organization. Also keep an eye out for when these groups were active. Groups that have not been active recently might not be useful to your organization, but this is an internal decision that needs to be made based on your organization’s needs. Be sure to keep these dates in mind as they will affect the scoring in the next section.
+The ATT&CK Groups knowledge base can be a good starting point for any team. The `Groups <https://attack.mitre.org/groups/>`_ page gives an overview of all the TAs reported publicly. Although many CTI vendors have their own naming structure, ATT&CK Groups is an attempt at combining these TAs under a single naming convention. On this page, you can “CTL + F” to look for groups relevant to you. Some focus areas to search for might be location (i.e., United States, Iran, China) or industry (i.e., financial, government, retail); both searches help to narrow down threat actors important to your organization. Also keep an eye out for when these groups were active. Groups that have not been active recently might not be useful to your organization, but this is an internal decision that needs to be made based on your organization’s needs. Be sure to keep these dates in mind as they will affect the scoring in the next section.
 
 A Navigator layer exists on each Group’s page. Use this layer to generate a list of TTPs for each TA you identified. Below is an ATT&CK Navigator example for FIN7 that highlights the TA’s TTPs in blue. This threat actor was chosen by searching “medical” on the ATT&CK Groups page, which identified this group as previously targeting our industry’s “medical equipment.”
 
@@ -254,7 +253,7 @@ A Navigator layer exists on each Group’s page. Use this layer to generate a li
 
     **This ATT&CK Navigator view shows the TTPs linked to the FIN7 group. These TTPs will be added to the platform layer we started with.**
 
-    .. figure:: /Graphics/20.svg
+    .. figure:: /_static/20.svg
         :alt: Example ATT&CK Navigator Layer for FIN7
         :scale: 75%
         :align: center
@@ -265,16 +264,13 @@ A Navigator layer exists on each Group’s page. Use this layer to generate a li
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
-            <a class="btn btn-primary" target="_blank" href="..\threat_actor_layer.json" download="threat_actor_layer.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\threat_actor_layer.json" download="threat_actor_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
 |
 
-This is our first down-select from the technology platform layer. Additional TAs and the following layers will provide more. If you have more time to spend on this layer, once you’ve finished using the ATT&CK Groups page, you should look at threat actors in the news that are potentially relevant to your industry. If your organization subscribes to commercial data, search those databases or use Threat Intelligence Platforms (TIPs) available to you. An example of this can be found in Appendix A.  Another good starting point for teams on a budget is the `APT Groups and Operations Google Sheet <https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/edit#gid=1864660085>`_. This spreadsheet consists of a list of threat actors by country as well as their name and aliases, operations associated, origin, toolset/malware utilized, a description of their motives/goals, and targeted industries.
+This is our first down-select from the technology platform layer. Additional TAs and the following layers will provide more. If you have more time to spend on this layer, once you’ve finished using the ATT&CK Groups page, you should look at threat actors in the news that are potentially relevant to your industry. If your organization subscribes to commercial data, search those databases or use Threat Intelligence Platforms (TIPs) available to you. An example of this can be found in the Additional Resources Section.  Another good starting point for teams on a budget is the `APT Groups and Operations Google Sheet <https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/edit#gid=1864660085>`_. This spreadsheet consists of a list of threat actors by country as well as their name and aliases, operations associated, origin, toolset/malware utilized, a description of their motives/goals, and targeted industries.
 
 This spreadsheet contains community-derived information. Because it is a living spreadsheet with various people making edits, it allows for a more real-time approach in terms of updates that can be helpful to organizations focusing on a specific threat actor. Ultimately this resource is another opportunity to find more evidence-based TTPs associated with the actor.
 
@@ -282,7 +278,7 @@ One final open-source resource is the `Thai CERT database <https://apt.etda.or.t
 
 Layer 3: Malicious Software TTPs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Goal:** Compile a list of TTPs that have been used for the execution of publicly available (malicious) tools.
+**Goal:** Compile a list of relevant TTPs executed by malicious tools targeting your technology platform.
 
 The next step will follow a similar process to the steps above. To start, an organization should always compile internal data first. This can be done by utilizing datasets within any TIPs you use as well as any previous threats your company has seen. Starting with the known and building on the new data allows for a more exhaustive list of TTPs while ensuring company-specific data is considered.
 
@@ -294,7 +290,7 @@ In our case, we search “Azure,” which results in two findings of software: A
 
     **This ATT&CK Navigator view shows the TTPs linked to the ROADTools software. These TTPs will be added onto the layer with platform and threat actor TTPs.**
 
-    .. figure:: /Graphics/21.svg
+    .. figure:: /_static/21.svg
         :alt: Example ATT&CK Navigator Layer for ROADTools
         :scale: 75%
         :align: center
@@ -305,10 +301,7 @@ In our case, we search “Azure,” which results in two findings of software: A
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
-            <a class="btn btn-primary" target="_blank" href="..\software_layer.json" download="software_layer.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\software_layer.json" download="software_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -327,7 +320,7 @@ For the AMPS device, we focused on one of the campaigns related to healthcare, s
 
     **This ATT&CK Navigator view shows the TTPs linked to campaign C0014. These TTPs will be added to the previous layer that included platform, threat actor, and software.**
 
-    .. figure:: /Graphics/22.svg
+    .. figure:: /_static/22.svg
         :alt: Example ATT&CK Navigator Layer for C0014
         :scale: 75%
         :align: center
@@ -338,21 +331,18 @@ For the AMPS device, we focused on one of the campaigns related to healthcare, s
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
-            <a class="btn btn-primary" target="_blank" href="..\campaign_layer_(only).json" download="campaign_layer_(only).json">
+            <a class="btn btn-primary" target="_blank" href="..layers\campaign_layer.json" download="campaign_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
 |
 
-.. collapse:: Evidence Layer Video Walkthrough
 
-    .. raw:: html
+The video below walks through an example of adding together all of the layers mentioned throughout the evidence section.
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+.. raw:: html
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |
 
@@ -367,7 +357,7 @@ Right now you have a list of TTPs, in the form of ATT&CK Navigator Layers, that 
 
     **The example below shows a combination of all layers used as examples above. The blue TTPs show those used by threat actors targeting your industry, the red TTPs signify the TTPs used by malicious software targeting your industry, the yellow highlights the TTPs used by campaigns targeting your industry, and grey shows any overlap between multiple layers.**
 
-    .. figure:: /Graphics/23.svg
+    .. figure:: /_static/23.svg
         :alt: Example ATT&CK Navigator Layer for Combined Layers
         :scale: 75%
         :align: center
@@ -378,10 +368,7 @@ Right now you have a list of TTPs, in the form of ATT&CK Navigator Layers, that 
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
-            <a class="btn btn-primary" target="_blank" href="..\evidence_layer.json" download="evidence_layer.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\evidence_layer.json" download="evidence_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -393,7 +380,7 @@ Compare these TTPs to those in your theory-based attack tree. Since these TTPs a
 
     **To apply this to our current example, we will take our attack tree branch centered around Azure and map the steps back to ATT&CK techniques, as seen in the Navigator Layer below.**
 
-    .. figure:: /Graphics/24.svg
+    .. figure:: /_static/theory.svg
         :alt: Example ATT&CK Navigator Layer for Azure Theory Branch
         :scale: 75%
         :align: center
@@ -404,20 +391,17 @@ Compare these TTPs to those in your theory-based attack tree. Since these TTPs a
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
-            <a class="btn btn-primary" target="_blank" href="..\theory.json" download="theory.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\theory.json" download="theory.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
 |
 
-.. collapse:: Evidence and Theory Combined Video Walkthrough
+The video below walks through an example of combining the theory and evidence layers.
 
-    .. raw:: html
+.. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 |
@@ -426,7 +410,7 @@ Compare these TTPs to those in your theory-based attack tree. Since these TTPs a
 
     **This Navigator Layer is now placed on top of our overall evidence layer (above); the TTPs that are supported by theory and evidence are highlighted in orange.**
 
-    .. figure:: /Graphics/25.svg
+    .. figure:: /_static/theory_evidence.svg
         :alt: Example ATT&CK Navigator Layer for Azure Theory Branch Overlayed with Evidence Layers
         :scale: 75%
         :align: center
@@ -436,10 +420,7 @@ Compare these TTPs to those in your theory-based attack tree. Since these TTPs a
     .. raw:: html
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="https://mitre-attack.github.io/attack-navigator/#layerURL=https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/heatmap_InT_2.09.json">
-            <i class="fa fa-map-signs"></i> Open Layer in Navigator</a>
-
-            <a class="btn btn-primary" target="_blank" href="..\theory_+_evidence.json" download="theory_+_evidence.json">
+            <a class="btn btn-primary" target="_blank" href="..layers\theory_+_evidence.json" download="theory_+_evidence.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -456,7 +437,7 @@ Scoring the Catalogue of Threats to Your System
 
 This step lets us calculate the level of threat associated with specific attack vectors and TTPs. The end goal of this step is to prioritize which threats to mitigate in Question 3. Note, if you are limited on time you can skip this step and proceed directly to Question 3 with your long list of TTPs. However, conducting this scoring step might save you more time in Question 3 by enabling you to focus only on high-threat TTPs.
 
-.. figure:: /Graphics/26.png
+.. figure:: /_static/26.png
     :alt: Theory and Evidence Scoring Scale
     :scale: 75%
     :align: left
@@ -497,7 +478,7 @@ Given a particular TTP identified by your overlay of theory and evidence, consid
 
 The more factors that apply for either theory or evidence, the further you move in the table right or down, respectively. The simplest form of this analysis assigns an equal value to all factors (i.e., a weight of 1). However, you may find that some factors should be treated with more importance to suit your prioritization needs. For example, you may give TTPs associated with external system boundaries (i.e., external network connections) extra weight to prioritize developing mitigations for system entry points.
 
-.. figure:: /Graphics/27.png
+.. figure:: /_static/27.png
     :alt: Example TTPs Plotted on Scoring Scale
     :scale: 80%
     :align: right
@@ -512,7 +493,7 @@ Example scoring
 Consider TTP: **T1011.001** – Exfiltration Over Other Network Medium: Exfiltration Over Bluetooth
 
 Assume the adversarial goal in this case is to steal sensitive patient data. One avenue would be to go directly to the source – the AMPS device itself.
-T1011.001 describes activity where “Adversaries may attempt to exfiltrate data over Bluetooth rather than the command-and-control channel. If the command-and-control network is a wired Internet connection, an adversary may opt to exfiltrate data using a Bluetooth communication channel.” The AMPS device has been designed with Bluetooth in mind, as it needs to pair with a phone.
+T1011.001 describes activity where *“Adversaries may attempt to exfiltrate data over Bluetooth rather than the command-and-control channel. If the command-and-control network is a wired Internet connection, an adversary may opt to exfiltrate data using a Bluetooth communication channel.”* The AMPS device has been designed with Bluetooth in mind, as it needs to pair with a phone.
 Several Bluetooth vulnerabilities have been documented in the literature, but we will choose to focus on one named `SweynTooth <https://asset-group.github.io/disclosures/sweyntooth/>`_. SweynTooth is a collection of vulnerabilities in certain Bluetooth Low Energy (BLE) chipsets, with a range of impacts ranging from crashes to security bypass. Perusing the website dedicated to this vulnerability, we can come to the following conclusions on the strength of theory factors:
 
 * The TTP has been hypothesized in the writeup (beyond hypothesized, in fact)
@@ -533,7 +514,7 @@ With respect to evidence, we see a much different story manifesting:
 
 On the evidence side, the above culminates in **1/5 factors** applying here, indicating **little or weak supporting evidence**. Together, the theory and evidence place this TTP toward the upper-right on the figure, which gives this TTP a medium priority under normal weighting.
 
-.. figure:: /Graphics/28.png
+.. figure:: /_static/28.png
     :alt: Example TTPs on Scoring Scale Prioritized
     :scale: 75%
     :align: right
@@ -549,14 +530,14 @@ Example Scoring TTPs within AMPS’s Azure Attack Tree Branch
 
 The following table summarizes the TTPs identified during the Theory and Evidence activities presented earlier in this section. We’ve sorted the table into three columns – Theory, Evidence, and both, to track which activity each TTP was derived from.
 
-.. figure:: /Graphics/theoryEvidenceTTPs.png
+.. figure:: /_static/theoryevidencettps.png
     :alt: Evidence and Theory TTPs Table
     :scale: 40%
     :align: right
 
     Evidence and Theory TTPs Table
 
-To keep rest of this example concise, we have elected to only score the TTPs listed under the “Theory and Evidence” column. However, scoring can (and should) be applied to all identified TTPs.
+To keep the rest of this example concise, we have elected to only score the TTPs listed under the “Theory and Evidence” column. However, scoring can (and should) be applied to all identified TTPs.
 
 *Theory factor scoring*
 
@@ -569,7 +550,7 @@ To keep rest of this example concise, we have elected to only score the TTPs lis
 #. TTP is associated with a critical system choke point identified in threat analysis
 
 
-.. figure:: /Graphics/theoryScoring.png
+.. figure:: /_static/theoryscoring.png
     :alt: Theory Scoring Table
     :scale: 30%
     :align: center
@@ -596,7 +577,7 @@ Some notes on the above:
 #. TTP has documentation of previous use against your tech platform.
 
 
-.. figure:: /Graphics/evidenceScoring.png
+.. figure:: /_static/evidencescoring.png
     :alt: Evidence Scoring Table
     :scale: 40%
     :align: center
@@ -614,7 +595,7 @@ Some notes on the above:
 It is important to note that Factors 3, 4, and 5 are all considered with restricted time windows, as allowing all instances of a TTP may lead to over-scoring based on “stale” information; i.e., a campaign that occurred two years prior, while informational, does not carry the same urgency as a campaign actively happening within the last month.
 After scoring, the TTPs can be placed on a heatmap overlay, then sorted by grouping from highest to lowest priority. The following figure illustrates the outcome of this process. Points on the heatmap with multiple listings represent TTPs that achieved the same score. Note that in this example, T1556 and T1059.001 could have their positions exchanged, depending on whether your priorities align closer to Theory or Evidence factors.
 
-.. figure:: /Graphics/29.png
+.. figure:: /_static/29.png
     :alt: Example TTPs on Scoring Scale Prioritized by Score
     :scale: 100%
     :align: center
@@ -622,3 +603,4 @@ After scoring, the TTPs can be placed on a heatmap overlay, then sorted by group
     Example TTPs on Scoring Scale Prioritized by Score
 
 As a reminder, this example only scored TTPs that appeared during both Theory and Evidence investigations. When creating a full threat model, it is important to consider all TTPs for completeness.
+

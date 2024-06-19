@@ -1,0 +1,84 @@
+﻿ATT&CK (Sub-)Technique Name,ATT&CK ID,Mapping Category,Effectiveness Score,Azure Security Capability
+Account Discovery,T1087,detect,partial,Alerts for Windows Machines
+Account Manipulation,T1098,protect,partial,Azure AD Privileged Identity Management
+Account Manipulation,T1098,protect,partial,Role Based Access Control
+Account Manipulation,T1098,detect,partial,Microsoft Defender for Identity
+Active Scanning,T1595,protect,partial,Azure Firewall
+Active Scanning,T1595,protect,partial,Azure Web Application Firewall
+Additional Cloud Credentials,T1098.001,protect,significant,Azure AD Privileged Identity Management
+Additional Cloud Credentials,T1098.001,protect,partial,Role Based Access Control
+Automated Collection,T1119,protect,partial,Cloud App Security Policies
+Automated Collection,T1119,detect,partial,Cloud App Security Policies
+Brute Force,T1110,protect,significant,Azure AD Multi-Factor Authentication
+Brute Force,T1110,protect,significant,Conditional Access
+Brute Force,T1110,protect,significant,Just-in-Time VM Access
+Brute Force,T1110,protect,significant,Passwordless Authentication
+Brute Force,T1110,protect,partial,Azure Active Directory Password Protection
+Brute Force,T1110,protect,partial,Azure AD Identity Secure Score
+Brute Force,T1110,protect,partial,Azure AD Password Policy
+Brute Force,T1110,protect,partial,Azure Policy
+Brute Force,T1110,detect,significant,Azure Alerts for Network Layer
+Brute Force,T1110,detect,partial,Alerts for Windows Machines
+Brute Force,T1110,detect,partial,Azure Sentinel
+Brute Force,T1110,detect,partial,Cloud App Security Policies
+Brute Force,T1110,detect,partial,Linux auditd alerts and Log Analytics agent integration
+Brute Force,T1110,detect,partial,Microsoft Defender for Identity
+Cloud Service Discovery,T1526,protect,partial,Azure Policy
+Cloud Service Discovery,T1526,detect,partial,Azure Defender for Resource Manager
+Cloud Service Discovery,T1526,detect,partial,Cloud App Security Policies
+Create Account,T1136,detect,partial,Azure Sentinel
+Data from Cloud Storage,T1530,protect,partial,Azure Policy
+Data from Cloud Storage,T1530,protect,partial,Role Based Access Control
+Data from Cloud Storage,T1530,detect,significant,Azure Defender for Storage
+Data from Cloud Storage,T1530,detect,partial,Cloud App Security Policies
+Exploit Public-Facing Application,T1190,protect,significant,Azure Web Application Firewall
+Exploit Public-Facing Application,T1190,protect,partial,Azure Automation Update Management
+Exploit Public-Facing Application,T1190,protect,partial,Azure Defender for Kubernetes
+Exploit Public-Facing Application,T1190,protect,partial,Azure Policy
+Exploit Public-Facing Application,T1190,protect,partial,Integrated Vulnerability Scanner Powered by Qualys
+Exploit Public-Facing Application,T1190,detect,significant,Azure Web Application Firewall
+Exploit Public-Facing Application,T1190,detect,partial,Alerts for Windows Machines
+Exploit Public-Facing Application,T1190,detect,partial,Azure Defender for App Service
+Exploit Public-Facing Application,T1190,detect,partial,Azure Network Traffic Analytics
+Exploitation for Credential Access,T1212,protect,significant,Azure Automation Update Management
+Exploitation for Credential Access,T1212,protect,partial,Integrated Vulnerability Scanner Powered by Qualys
+Exploitation for Credential Access,T1212,detect,partial,Alerts for Windows Machines
+Exploitation for Credential Access,T1212,detect,partial,Azure Defender for App Service
+File and Directory Permissions Modification,T1222,detect,partial,File Integrity Monitoring
+Gather Victim Network Information,T1590,protect,partial,Azure Firewall
+Gather Victim Network Information,T1590,protect,partial,Azure Policy
+Modify Authentication Process,T1556,detect,partial,File Integrity Monitoring
+Password Spraying,T1110.003,respond,significant,Azure AD Identity Protection
+Password Spraying,T1110.003,protect,significant,Azure AD Multi-Factor Authentication
+Password Spraying,T1110.003,protect,significant,Conditional Access
+Password Spraying,T1110.003,protect,significant,Just-in-Time VM Access
+Password Spraying,T1110.003,protect,significant,Passwordless Authentication
+Password Spraying,T1110.003,protect,partial,Azure Active Directory Password Protection
+Password Spraying,T1110.003,protect,partial,Azure AD Identity Secure Score
+Password Spraying,T1110.003,protect,partial,Azure Policy
+Password Spraying,T1110.003,detect,significant,Alerts for Windows Machines
+Password Spraying,T1110.003,detect,significant,Azure Alerts for Network Layer
+Password Spraying,T1110.003,detect,significant,Microsoft Defender for Identity
+Password Spraying,T1110.003,detect,partial,Azure AD Identity Protection
+Password Spraying,T1110.003,detect,partial,Azure Sentinel
+Password Spraying,T1110.003,detect,partial,Cloud App Security Policies
+Password Spraying,T1110.003,detect,partial,Linux auditd alerts and Log Analytics agent integration
+Remote System Discovery,T1018,protect,partial,Azure Firewall
+Steal Application Access Token,T1528,protect,partial,Azure AD Identity Secure Score
+Steal Application Access Token,T1528,protect,partial,Azure Key Vault
+Steal Application Access Token,T1528,protect,partial,Cloud App Security Policies
+Steal Application Access Token,T1528,protect,partial,Role Based Access Control
+Steal Application Access Token,T1528,detect,partial,Cloud App Security Policies
+Unsecured Credentials,T1522,protect,partial,Azure Key Vault
+Unused/Unsupported Cloud Regions,T1535,protect,partial,Azure Policy
+Unused/Unsupported Cloud Regions,T1535,detect,partial,Cloud App Security Policies
+Valid Accounts,T1078,respond,partial,Azure AD Identity Protection
+Valid Accounts,T1078,detect,partial,Alerts for Windows Machines
+Valid Accounts,T1078,detect,partial,Azure AD Identity Protection
+Valid Accounts,T1078,detect,partial,Azure Sentinel
+Valid Accounts,T1078,detect,partial,Cloud App Security Policies
+Vulnerability Scanning,T1595.002,protect,partial,Azure Firewall
+Vulnerability Scanning,T1595.002,protect,partial,Azure Web Application Firewall
+Vulnerability Scanning,T1595.002,detect,partial,Azure Defender for App Service
+Vulnerability Scanning,T1595.002,detect,partial,Azure Sentinel
+Vulnerability Scanning,T1595.002,detect,partial,Azure Web Application Firewall
