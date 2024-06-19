@@ -94,7 +94,7 @@ Using our knowledge of the system we codified responding to Question 1, we now n
 Visualizing attack trees
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-To visualize these attack trees, we used (and recommend using) MITRE Engenuity’s Attack Flow Builder (see below), but there are several other simple and complex tools you can use to build your attack trees. The easiest approach is to use a common tool like Microsoft Word or PowerPoint. The graphic design tool Canva is another great, easy-to-use option (any graphic design software can work as well). For more formal tools capable of complex analysis, there are a few options:
+To visualize these attack trees, we used (and recommend using) `MITRE Engenuity’s Attack Flow Builder <https://center-for-threat-informed-defense.github.io/attack-flow/>`_, but there are several other simple and complex tools you can use to build your attack trees. The easiest approach is to use a common tool like Microsoft Word or PowerPoint. The graphic design tool Canva is another great, easy-to-use option (any graphic design software can work as well). For more formal tools capable of complex analysis, there are a few options:
 
 * `SecurITree <https://www.amenaza.com/attack-tree-tool.php>`_, developed by Amenaza Technologies, is purpose-built for attack tree analyses and allows for the addition of detailed attributes to different attack paths, risk metrics, and adversary personas.
 * The `AT-AT <https://github.com/yathuvaran/AT-AT>`_ (Attack Tree Analysis Tool) allows users to develop and analyze attack scenarios in much the same way.
@@ -161,7 +161,7 @@ Below is an example of how a theoretical attack can be aligned with a TTP (Brows
 
 During our search for threats relevant to the AMPS device, we determined that one of the vectors (branch of the tree) an attacker could use to access user location data was by accessing their web portal. We determined that one potential vector for gaining access to the user’s portal was by stealing their log-in credentials. This can be done using an activity characterized as Session Hijacking in ATT&CK.
 
-Ultimately, we will be integrating these threats into a singular tree using the Center’s Attack Flow tool and directly linking them to our critical assets. Attack Flow integrates seamlessly with ATT&CK. Threat actor actions represented as nodes on the tree can be linked to specific TTPs. Furthermore, additional contextual elements such as attack characteristics, assets, data types, conditions, and references can be added to each node of the tree. With Browser Session Hijacking (T1185) identified as one of our theoretical exploits, we can now associate that specific node on the tree with T1185, thereby pulling in all the data that’s been associated with that exploit. Not all the threats you identify will be directly tied to TTPs, but these threats should still be included in your tree and will still inform the response you develop in Question 3.
+Ultimately, we will be integrating these threats into a singular tree using the Center’s Attack Flow tool and directly linking them to our critical assets. Attack Flow integrates seamlessly with ATT&CK. A Threat actor actions represented as nodes on the tree can be linked to specific TTPs. Furthermore, additional contextual elements such as attack characteristics, assets, data types, conditions, and references can be added to each node of the tree. With Browser Session Hijacking (T1185) identified as one of our theoretical exploits, we can now associate that specific node on the tree with T1185, thereby pulling in all the data that’s been associated with that exploit. Not all the threats you identify will be directly tied to TTPs, but these threats should still be included in your tree and will still inform the response you develop in Question 3.
 
 An example of the AMPS attack tree and all associated TTPs can be found below.
 
@@ -171,6 +171,8 @@ An example of the AMPS attack tree and all associated TTPs can be found below.
     :align: center
 
     Example AMPS Attack Tree Converted into Attack Flow
+
+For more information on the Attack Flow Builder, review the :ref:`Additional Resources` page. There you'll find a more detailed walkthrough of the Builder and its attack tree modeling capabilities.
 
 Evidence
 ---------
@@ -532,8 +534,8 @@ The following table summarizes the TTPs identified during the Theory and Evidenc
 
 .. figure:: /_static/theoryevidencettps.png
     :alt: Evidence and Theory TTPs Table
-    :scale: 40%
-    :align: right
+    :scale: 25%
+    :align: center
 
     Evidence and Theory TTPs Table
 
@@ -552,7 +554,7 @@ To keep the rest of this example concise, we have elected to only score the TTPs
 
 .. figure:: /_static/theoryscoring.png
     :alt: Theory Scoring Table
-    :scale: 30%
+    :scale: 25%
     :align: center
 
     Theory Scoring Table
@@ -579,7 +581,7 @@ Some notes on the above:
 
 .. figure:: /_static/evidencescoring.png
     :alt: Evidence Scoring Table
-    :scale: 40%
+    :scale: 25%
     :align: center
 
     Evidence Scoring Table

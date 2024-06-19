@@ -1,3 +1,5 @@
+.. _Additional Resources:
+
 Additional Resources
 ====================
 
@@ -20,3 +22,13 @@ Leveraging existing CTI allows you to develop known attack vectors that could be
 *	When it comes to researching CTI for embedded systems, MITRE developed a publicly available knowledge base called `EMB3D <https://emb3d.mitre.org/properties-list/>`_. This is a great resource for both theory and evidence. Start by down selecting by embedded system property and read through the various threats to each.
 
 It is a good idea to have a central location/repository for all your CTI data. This can be a spreadsheet or a threat intelligence platform (TIP) like OpenCTI (see example data below for FIN7). There are many TIP out there that will do to research work for you – automatically pulling in the latest vender reports. Some TIPs will even auto-parse the data in reports for you. Be sure to spot check any automated report parsing for accuracy.
+
+Attack Flow
+-----------
+
+.. raw:: html
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+|

@@ -7,7 +7,7 @@ Introduction
 
     Threat Modeling with ATT&CK Overview (Click to Enlarge)
 
-The process outlined in this project details an approach developed by MITRE Engenuity’s Center for Threat-Informed Defense (hereafter, the Center) for integrating MITRE ATT&CK® into your organization’s existing threat modeling methodology.
+The process outlined in this project details an approach developed by `MITRE Engenuity’s Center for Threat-Informed Defense <https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/>`_ (hereafter, the Center) for integrating `MITRE ATT&CK® <https://attack.mitre.org/>`_ into your organization’s existing threat modeling methodology.
 At the core of this approach are four key questions, outlined in the `Threat Modeling Manifesto <https://www.threatmodelingmanifesto.org/>`_, that we need to answer:
 
 * Question 1: What are we working on?

@@ -10,10 +10,12 @@ Threat Modeling with ATT&CK |version|
 
 Threat Modeling with ATT&CK provides a recommended approach that integrates the common language that security operations teams rely upon - `MITRE ATT&CK® <https://attack.mitre.org/>`_ - into their organization’s threat modeling practices. Creating an approach to threat modeling that integrates ATT&CK enables cyber defenders to focus on the activity of threat modeling with a clear, consistent understanding of adversary behaviors and tailor defensive investments to mitigate threats related to their systems or environments.
 At the core of this approach are four key questions, outlined in the `Threat Modeling Manifesto <https://www.threatmodelingmanifesto.org/>`_, that we need to answer:
-Question 1: What are we working on?
-Question 2: What could go wrong?
-Question 3: What are we going to do about it?
-Question 4: Did we do a good job?
+
+* Question 1: What are we working on?
+* Question 2: What could go wrong?
+* Question 3: What are we going to do about it?
+* Question 4: Did we do a good job?
+
 This project is created and maintained by `MITRE Engenuity Center for Threat-Informed Defense (Center) <https://ctid.mitre-engenuity.org/>`_ and is funded by our `research participants <https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/threat-modeling-with-attack/>`_, in furtherance of our mission to advance the state of the art and the state of the practice in threat-informed defense globally. This work builds upon The MITRE Corporation’s `Playbook for Threat Modeling Medical Devices <https://www.mitre.org/sites/default/files/2021-11/Playbook-for-Threat-Modeling-Medical-Devices.pdf>`_ by applying this integrated threat modeling approach to the fictional medical device created under that project.
 
 .. toctree::

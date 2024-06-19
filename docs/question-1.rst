@@ -5,7 +5,7 @@ Question 1: What are we working on?
 
 .. figure:: /_static/question1graphic.png
   :alt: Question 1 Overview
-  :scale: 30%
+  :scale: 20%
   :align: center
 
   Question 1 Overview Graphic (Click to Enlarge)
@@ -84,7 +84,7 @@ As a security team evaluating AMPS for its manufacturer, we identified that a co
 
 .. figure:: /_static/3.png
   :alt: Mission/System Decomposition Graphic
-  :scale: 50%
+  :scale: 20%
   :align: right
 
 Step 2: Identify Operational Tasks (Cross Functional Flow Chart)
@@ -100,7 +100,7 @@ Next, leverage the knowledge pooled from stakeholders to determine the different
 
 Part 3: System Decomposition
 ----------------------------
-Step 3: Develop a Data Flow Diagram (DFD) of your system.
+Step 1: Develop a Data Flow Diagram (DFD) of your system.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 There are multiple ways to design a DFD, but we recommend the `DFD3 <https://github.com/adamshostack/DFD3>`_ standard. Begin by answering the following questions:
 
@@ -124,7 +124,7 @@ From these questions, start to draw your diagram and gradually add additional co
 
   Mid-level DFD with Trust Boundaries (Click to Enlarge)
 
-Step 4: Determine which system functions are associated with distinct operational tasks.
+Step 2: Determine which system functions are associated with distinct operational tasks.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 With the DFD of your system in hand, you can then link the system’s operational tasks to specific system functions. When executing a specific task, what parts of the system are utilized? These include both assets and data flows between systems.
 
