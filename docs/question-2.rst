@@ -109,31 +109,30 @@ Part 2: Critical Path Analysis
 
 In this step, just as we mapped system processes to critical assets in Question 1, we’re taking the theoretical attacks we’ve brainstormed and associating them with critical paths and components.
 
-.. figure:: /_static/13.png
+.. figure:: /_static/simpletree.png
     :alt: Bottom-up Simple Attack Tree
-    :scale: 50%
+    :scale: 5%
     :align: left
 
-    Bottom-up Simple Attack Tree
+    Bottom-up Simple Attack Tree (Click to Enlarge)
 
 .. figure:: /_static/14.png
     :alt: AMPS location information alongside Mid-Level DFD of relevant critical assets
     :scale: 65%
     :align: right
 
-    AMPS location information alongside Mid-Level DFD of relevant critical assets
+    AMPS location info with Mid-Level DFD of relevant critical assets (Click to Enlarge)
 
 As we establish these associations between threats and assets, we’ll begin distilling our theoretical threats. This exercise will clarify how steps in an attack are associated with one another, determining which attacks must be executed and in what order. It will also verify whether certain steps in an attack are still possible once mapped onto specific assets within the system.
-
 In the example below, we’ve created an attack tree and populated it with theoretical threats against our AMPS device. In Question 1, we said collecting and securely storing patient data was essential to our product. We’ve therefore made the goal of our attack tree stealing patient sensor data, specifically user location data. We’ve spoken with our team, trawled academic literature, reviewed blog posts by industry professionals, and watched presentations by security experts to create an initial set of theoretical threats to our device.
 Another resource we reviewed was MITRE’s `EMB3D threat knowledge base <https://emb3d.mitre.org/properties-list/>`_, which worked great to break down the AMPS device by its properties and the specific threats to each. For more help brainstorming insider threat behaviors, take a look at the Center’s `insider threat knowledge base <https://center-for-threat-informed-defense.github.io/insider-threat-ttp-kb/introduction/>`_. Taken together, all this research gives us an initial list of threats we can then associate with our critical assets. See the AMPS attack tree below for an example of the compiled theoretical threats against our critical assets.
 
-.. figure:: /_static/15.png
+.. figure:: /_static/fulltheorytree.png
     :alt: Example AMPS attack tree mapped to our critical assets
-    :scale: 65%
+    :scale: 15%
     :align: center
 
-    Example AMPS attack tree mapped to our critical assets
+    Example AMPS attack tree mapped to our critical assets (Click to Enlarge)
 
 Part 3: Translating Attack Tree Concepts into ATT&CK TTPs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -437,9 +436,9 @@ Scoring the Catalogue of Threats to Your System
 
 This step lets us calculate the level of threat associated with specific attack vectors and TTPs. The end goal of this step is to prioritize which threats to mitigate in Question 3. Note, if you are limited on time you can skip this step and proceed directly to Question 3 with your long list of TTPs. However, conducting this scoring step might save you more time in Question 3 by enabling you to focus only on high-threat TTPs.
 
-.. figure:: /_static/26.png
+.. figure:: /_static/scoringgraphic.png
     :alt: Theory and Evidence Scoring Scale
-    :scale: 75%
+    :scale: 30%
     :align: left
 
     Theory and Evidence Scoring Scale
@@ -478,9 +477,9 @@ Given a particular TTP identified by your overlay of theory and evidence, consid
 
 The more factors that apply for either theory or evidence, the further you move in the table right or down, respectively. The simplest form of this analysis assigns an equal value to all factors (i.e., a weight of 1). However, you may find that some factors should be treated with more importance to suit your prioritization needs. For example, you may give TTPs associated with external system boundaries (i.e., external network connections) extra weight to prioritize developing mitigations for system entry points.
 
-.. figure:: /_static/27.png
+.. figure:: /_static/scoringplot.png
     :alt: Example TTPs Plotted on Scoring Scale
-    :scale: 80%
+    :scale: 30%
     :align: right
 
     Example TTPs Plotted on Scoring Scale
@@ -514,9 +513,9 @@ With respect to evidence, we see a much different story manifesting:
 
 On the evidence side, the above culminates in **1/5 factors** applying here, indicating **little or weak supporting evidence**. Together, the theory and evidence place this TTP toward the upper-right on the figure, which gives this TTP a medium priority under normal weighting.
 
-.. figure:: /_static/28.png
+.. figure:: /_static/scoringpriority.png
     :alt: Example TTPs on Scoring Scale Prioritized
-    :scale: 75%
+    :scale: 25%
     :align: right
 
     Example TTPs on Scoring Scale Prioritized
@@ -595,9 +594,9 @@ Some notes on the above:
 It is important to note that Factors 3, 4, and 5 are all considered with restricted time windows, as allowing all instances of a TTP may lead to over-scoring based on “stale” information; i.e., a campaign that occurred two years prior, while informational, does not carry the same urgency as a campaign actively happening within the last month.
 After scoring, the TTPs can be placed on a heatmap overlay, then sorted by grouping from highest to lowest priority. The following figure illustrates the outcome of this process. Points on the heatmap with multiple listings represent TTPs that achieved the same score. Note that in this example, T1556 and T1059.001 could have their positions exchanged, depending on whether your priorities align closer to Theory or Evidence factors.
 
-.. figure:: /_static/29.png
+.. figure:: /_static/scoringplotpriority.png
     :alt: Example TTPs on Scoring Scale Prioritized by Score
-    :scale: 100%
+    :scale: 30%
     :align: center
 
     Example TTPs on Scoring Scale Prioritized by Score
