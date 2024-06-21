@@ -308,16 +308,6 @@
 			"metadata": [],
 			"links": [],
 			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T1059",
-			"tactic": "execution",
-			"color": "#bdbdbd",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
 		}
 	],
 	"gradient": {

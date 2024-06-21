@@ -295,16 +295,6 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1134",
-			"tactic": "privilege-escalation",
-			"color": "#9e9ac8",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
 			"techniqueID": "T1111",
 			"tactic": "credential-access",
 			"color": "#9e9ac8",
@@ -337,16 +327,6 @@
 		{
 			"techniqueID": "T1556",
 			"tactic": "defense-evasion",
-			"color": "#9e9ac8",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
-			"techniqueID": "T1059",
-			"tactic": "execution",
 			"color": "#9e9ac8",
 			"comment": "",
 			"enabled": true,
