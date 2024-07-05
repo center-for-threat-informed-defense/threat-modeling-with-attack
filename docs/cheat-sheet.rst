@@ -2,7 +2,10 @@ Condensed Process
 =================
 
 .. note::
-    This Condensed Process should only be used if your team has limited time to conduct threat modeling (days instead of weeks). Before using, please review Questions 1 through 4 of the uncondensed process.
+
+  This Condensed Process should only be used if your team has limited time to conduct
+  threat modeling (days instead of weeks). Before using, please review Questions 1
+  through 4 of the uncondensed process.
 
 :ref:`Question 1`
 -------------------
@@ -16,7 +19,8 @@ Condensed Process
 
 Develop a top-level Dataflow Diagram for your system
 
-Identify critical components and dataflows that, when impacted, would result in mission failure
+Identify critical components and dataflows that, when impacted, would result in mission
+failure
 
 :ref:`Question 2`
 -------------------
@@ -50,7 +54,8 @@ Implement the mitigations listed within the ATT&CK page for each brainstormed TT
 
 	**OR**
 
-Implement the NIST 800-53 controls for each brainstormed TTP using the MITRE Engenuity Mappings Explorer
+Implement the NIST 800-53 controls for each brainstormed TTP using the MITRE Engenuity
+Mappings Explorer
 
 .. figure:: /_static/condensedprocess4.png
   :alt: Mappings Explorer Outline
@@ -70,5 +75,6 @@ Implement the NIST 800-53 controls for each brainstormed TTP using the MITRE Eng
 
   Reevaluate
 
-Periodically repeat this process to evaluate your existing mitigations and make sure they are in sync with the development of your system.
+Periodically repeat this process to evaluate your existing mitigations and make sure
+they are in sync with the development of your system.
 
