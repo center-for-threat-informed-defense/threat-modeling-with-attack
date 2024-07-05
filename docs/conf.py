@@ -74,7 +74,7 @@ html_context = {
     "prs_numbers": prs_numbers,
 }
 html_theme_options = {
-    "analytics_id": "", # TODO Create and fill in Google Analytics G-tag.
+    "analytics_id": "G-BRQ3ZFX9EQ",
     "display_version": True,
     "logo_only": True,
     "style_external_links": True,
