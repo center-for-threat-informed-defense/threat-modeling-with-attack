@@ -128,7 +128,7 @@ the sensitive nature of the health data AMPS collects and shares, which includes
 location data to guide an emergency response in the event of a stroke, the AMPS device
 should effectively protect the confidentiality of that data.
 
-.. figure:: /_static/3.png
+.. figure:: /_static/system-decomp.png
   :alt: Mission/System Decomposition Graphic
   :scale: 20%
   :align: right
@@ -144,7 +144,7 @@ executed to perform that function? These are also known as Mission Essential Fun
 (MEFs). To visualize these MEFs, we recommend using a cross functional flow chart like
 the one below for the AMPS.
 
-.. figure:: /_static/4.png
+.. figure:: /_static/swimlanes.png
   :alt: Cross-Functional Flow Chart of a Data Flow in a Fictional Medical Device: the Ankle Monitor Predictor of Stroke (AMPS)
   :scale: 75%
   :align: center
@@ -171,14 +171,14 @@ and sub-systems to the DFD depending on scope and time. Start at a high level an
 your way down as seen in the below AMPS examples. Ultimately, these datapoints should
 come together to form a comprehensive map of your system.
 
-.. figure:: /_static/5.png
+.. figure:: /_static/dfd.png
   :alt: High-level DFD for AMPS
   :scale: 70%
   :align: left
 
   High-level DFD (Click to Enlarge)
 
-.. figure:: /_static/6.png
+.. figure:: /_static/dfd-trust.png
   :alt: Mid-level DFD with Trust Boundaries for AMPS
   :scale: 50%
   :align: right
@@ -219,14 +219,14 @@ yourself the following questions:
 In the example below, we’ve identified critical assets/components of the AMPS using our
 DFD, highlighting them in gold.
 
-.. figure:: /_static/7.png
+.. figure:: /_static/amps-components.png
   :alt: Critical AMPS System Components
   :scale: 60%
   :align: left
 
   Critical AMPS System Components
 
-.. figure:: /_static/8.png
+.. figure:: /_static/dfd-midlevel.png
   :alt: Mid-Level DFD with Trust Boundaries & ID-ed Critical Assets
   :scale: 60%
   :align: right

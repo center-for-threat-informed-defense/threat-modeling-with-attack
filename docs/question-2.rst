@@ -56,7 +56,7 @@ a manifested threat.
 When considered together, these two approaches give a well-rounded view of a system’s
 security posture, for both known and unknown threats.
 
-.. figure:: /_static/10.png
+.. figure:: /_static/theory-evidence-scale.png
     :alt: Theory and Evidence Scale
     :align: center
 
@@ -116,7 +116,7 @@ in some cases must, take to reach its objective. Regardless of the attacker's in
 any adversary seeking to exploit a given system must achieve these intermediate goals.
 In this manner, the tree is agnostic towards the attacker’s subsequent goals.
 
-.. figure:: /_static/11.png
+.. figure:: /_static/attack-tree-bottom-up.png
     :alt: Example of Bottom-Up Attack Tree and One of its Isolated Sub-Trees
     :scale: 50%
     :align: center
@@ -139,7 +139,7 @@ represents a different exploitation strategy that can or must be employed to ach
 ultimate objective. In some cases, a particular strategy (branch) must be executed to
 allow another strategy to move forward.
 
-.. figure:: /_static/12.png
+.. figure:: /_static/attack-tree-design-language.png
     :alt: Attack Tree design language
     :scale: 50%
     :align: center
@@ -199,7 +199,7 @@ associated with one another, determining which attacks must be executed and in w
 order. It will also verify whether certain steps in an attack are still possible once
 mapped onto specific assets within the system.
 
-.. figure:: /_static/14.png
+.. figure:: /_static/amps-location.png
     :alt: AMPS location information alongside Mid-Level DFD of relevant critical assets
     :align: center
 
@@ -233,7 +233,7 @@ Part 3: Translating Attack Tree Concepts into ATT&CK TTPs
 **Goal:** Use ATT&CK as a common language to describe adversarial behaviors against your
 system
 
-.. figure:: /_static/16.png
+.. figure:: /_static/attack-framework.png
     :alt: Example of an ATT&CK Framework
     :scale: 75%
     :align: center
@@ -258,7 +258,7 @@ of.
 Below is an example of how a theoretical attack can be aligned with a TTP (Browser
 Session Hijacking T1185).
 
-.. figure:: /_static/17.png
+.. figure:: /_static/attack-tree-session-hijacking.png
     :alt: Browser Session Hijacking Node Closeup
     :scale: 50%
     :align: center
@@ -282,22 +282,17 @@ thereby pulling in all the data that’s been associated with that exploit. Not 
 threats you identify will be directly tied to TTPs, but these threats should still be
 included in your tree and will still inform the response you develop in Question 3.
 
-An example of the AMPS attack tree and all associated TTPs can be found below.
-
-.. TODO can we get a better graphic?
-
-.. figure:: /_static/18.png
+.. figure:: /_static/attack-flow.png
     :alt: Example AMPS Attack Tree Converted into Attack Flow
-    :scale: 75%
+    :scale: 10%
     :align: center
 
-    Example AMPS Attack Tree Converted into Attack Flow
+    Example AMPS Attack Tree Converted into Attack Flow (Click to enlarge)
 
-For more information on the Attack Flow Builder, review the :ref:`Additional Resources`
-page. There you'll find a more detailed walkthrough of the Builder and its attack tree
-modeling capabilities.
-
-.. TODO hyperlink to the attack tree in the flow library
+For an interactive example, `open this attack tree
+<https://center-for-threat-informed-defense.github.io/attack-flow/ui/?src=..%2fcorpus%2fAttack%20Tree%20Example.afb>`_
+in Attack Flow Builder. For more information on the Attack Flow Builder, review the
+:ref:`Additional Resources` page.
 
 Evidence
 ---------
@@ -336,7 +331,7 @@ compiled in the form of ATT&CK Navigator Layers. The figure below shows the proc
 stacking the multiple ATT&CK Navigator Layers derived from each category of data. The
 information gathered in this section will also support scoring in the following section.
 
-.. figure:: /_static/19.png
+.. figure:: /_static/ttp-layers.png
     :alt: Layered Steps to Form Collection of TTPS
     :align: center
 
@@ -445,7 +440,7 @@ industry’s “medical equipment.”
 
     **This ATT&CK Navigator view shows the TTPs linked to the FIN7 group. These TTPs will be added to the platform layer we started with.**
 
-    .. figure:: /_static/20.svg
+    .. figure:: /_static/attack-navigator-fin7.svg
         :alt: Example ATT&CK Navigator Layer for FIN7
         :scale: 75%
         :align: center
@@ -517,7 +512,7 @@ Layer. The ROADTools ATT&CK Navigator layer can be seen below in red.
     **This ATT&CK Navigator view shows the TTPs linked to the ROADTools software. These
     TTPs will be added onto the layer with platform and threat actor TTPs.**
 
-    .. figure:: /_static/21.svg
+    .. figure:: /_static/attack-navigator-roadtools.svg
         :alt: Example ATT&CK Navigator Layer for ROADTools
         :scale: 75%
         :align: center
@@ -562,7 +557,7 @@ this campaign in yellow.
 
     **This ATT&CK Navigator view shows the TTPs linked to campaign C0014. These TTPs will be added to the previous layer that included platform, threat actor, and software.**
 
-    .. figure:: /_static/22.svg
+    .. figure:: /_static/attack-navigator-c0014.svg
         :alt: Example ATT&CK Navigator Layer for C0014
         :scale: 75%
         :align: center
@@ -608,7 +603,7 @@ prioritization.
     highlights the TTPs used by campaigns targeting your industry, and grey shows any
     overlap between multiple layers.**
 
-    .. figure:: /_static/23.svg
+    .. figure:: /_static/attack-navigator-combined.svg
         :alt: Example ATT&CK Navigator Layer for Combined Layers
         :scale: 75%
         :align: center
