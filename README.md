@@ -1,6 +1,6 @@
 # Threat Modeling with ATT&CK
 
-Threat Modeling with ATT&CK defines how to integreate MITRE ATT&CK® into your
+Threat Modeling with ATT&CK defines how to integrate MITRE ATT&CK® into your
 organization’s existing threat modeling methodology. This process is intended for
 universal application to any system or technology stack (large or small) using any
 existing threat modeling methodology like STRIDE, PASTA, or Attack Trees. To demonstrate

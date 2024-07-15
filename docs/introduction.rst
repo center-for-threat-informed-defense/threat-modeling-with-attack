@@ -7,7 +7,7 @@ Introduction
 
     Threat Modeling with ATT&CK Overview (Click to Enlarge)
 
-This project defines how to integreate `MITRE ATT&CK® <https://attack.mitre.org/>`_ into
+This project defines how to integrate `MITRE ATT&CK® <https://attack.mitre.org/>`_ into
 your organization’s existing threat modeling methodology. At the core of this approach
 are four key questions, outlined in the `Threat Modeling Manifesto
 <https://www.threatmodelingmanifesto.org/>`_, that we need to answer:
