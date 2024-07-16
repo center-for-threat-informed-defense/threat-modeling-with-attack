@@ -59,7 +59,7 @@ Getting Started
 ~~~~~~~~~~~~~~~
 
 The first step is to open the Attack Flow Builder in either the online version or run it
- locally. Click the button below to open the builder in a new tab.
+locally. Click the button below to open the builder in a new tab.
 
 .. raw:: html
 
@@ -153,7 +153,7 @@ The rendered GraphViz png will look something like this:
   :alt: Example Attack Tree rendered using GraphViz
   :align: center
 
-  The result of converting ``attack-tree.json`` to ``attack-tree.png``
+  The result of converting ``attack-tree.json`` to ``attack-tree.png`` using Mermaid
 
 Visualize with Mermaid
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -173,9 +173,9 @@ render to Mermaid. The first step is converting to Mermaid format:
     $ af mermaid corpus/attack-tree.json attack-tree.mmd
 
 
-This command will transform your json file into mermaid format. From here you can
-include the mermaid code directly into markdown, or you can run one more command to
-render it as an image.
+The example command converts the Attack Flow ``attack-tree.json`` into Mermaid format
+``attack-tree.mmd``. From here you can include the mermaid code directly into markdown,
+or you can run one more command to render it as an image.
 
 .. code:: bash
 
@@ -187,7 +187,7 @@ The rendered GraphViz png will look something like this:
   :alt: Example Attack Tree rendered using Mermaid
   :align: center
 
-  The result of converting ``attack-tree.json`` to ``attack-tree.png``
+  The result of converting ``attack-tree.json`` to ``attack-tree.png`` using Mermaid
 
 
 Emulation Tools Mapped to ATT&CK
