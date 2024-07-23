@@ -307,11 +307,9 @@ purple is low risk and dark purple is high risk.
 
 The video below walks through an example of building a scoring, defense, and risk layer.
 
-.. TODO embed video #3
-
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="700" height="394" src="https://www.youtube-nocookie.com/embed/61APDRwPPkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |
 

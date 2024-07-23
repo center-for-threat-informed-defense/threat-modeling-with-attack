@@ -20,7 +20,7 @@
 project = "Threat Modeling with ATT&CK"
 author = "Center for Threat-Informed Defense"
 copyright_years = "2024"
-prs_numbers = "REPLACE_WITH_PRS_NUMBER"
+prs_numbers = "CT0122"
 
 # The full version, including alpha/beta/rc tags
 version = "v1.0.0"

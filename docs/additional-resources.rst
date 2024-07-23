@@ -43,14 +43,6 @@ accuracy.
 Attack Flow
 -----------
 
-.. raw:: html
-
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-.. TODO were they planning to put a video here? we don't have an attack flow youtube
-
-|
-
 Attack Flow's builder and command line tools can be used to visualize Attack Trees. An
 example Attack Tree can be found on the `Attack Flow Examples Page
 <https://center-for-threat-informed-defense.github.io/attack-flow/example_flows/>`_.

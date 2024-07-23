@@ -18,7 +18,7 @@ to mitigate threats related to their systems or environments.
 This project is created and maintained by `MITRE Engenuity Center for Threat-Informed
 Defense (Center) <https://ctid.mitre-engenuity.org/>`_ and is funded by our `research
 participants
-<https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/TODO/>`_,
+<https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/threat-modeling-with-attack/#research-participants>`_,
 in furtherance of our mission to advance the state of the art and the state of the
 practice in threat-informed defense globally.
 

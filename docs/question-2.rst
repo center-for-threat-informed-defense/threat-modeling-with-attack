@@ -577,11 +577,9 @@ this campaign in yellow.
 The video below walks through an example of adding together all of the layers mentioned
 throughout the evidence section.
 
-.. TODO video 1 goes here
-
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="700" height="394" src="https://www.youtube-nocookie.com/embed/H417WchXhzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |
 
@@ -649,11 +647,9 @@ will make one combined overlay for each technology platform branch of your tree.
 
 The video below walks through an example of combining the theory and evidence layers.
 
-.. TODO video 2 goes here
-
 .. raw:: html
 
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/h_BC6QMWDbA?si=Abpy35U4SYKMYUeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="700" height="394" src="https://www.youtube-nocookie.com/embed/uXepquLyzk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |
 
