@@ -3,6 +3,34 @@
 Additional Resources
 ====================
 
+Publications & Presentations
+----------------------------
+
+The content of this website is also available as a white paper:
+
+.. image:: _static/pdf_thumbnail.png
+  :alt: Thumbnail view of the whitepaper cover page.
+
+.. raw:: html
+
+  <p>
+      <a class="btn btn-primary" target="_blank" href="../presentations/threat-modeling-with-attack.pdf" download="threat-modeling-with-attack.pdf">
+      <i class="fa fa-download"></i> Download White Paper</a>
+  </p>
+
+This material was presented at `BSides CT <https://www.bsidesct.org/>`__:
+
+.. image:: _static/bsides_thumbnail.png
+  :alt: Thumbnail view of the BSides presentation.
+
+.. raw:: html
+
+  <p>
+      <a class="btn btn-primary" target="_blank" href="../presentations/tmwa-bsides-ct.pdf" download="tmwa-bsides-ct.pdf">
+      <i class="fa fa-download"></i> Download Slides</a>
+  </p>
+
+
 Cyber Threat Intelligence Resources
 -----------------------------------
 

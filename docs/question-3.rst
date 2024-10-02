@@ -239,7 +239,7 @@ Maximum # of defensive capabilities = 15 (Password Spraying)
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\scoring_layer.json" download="scoring_layer.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/scoring_layer.json" download="scoring_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -270,7 +270,7 @@ purple is low risk and dark purple is high risk.
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\protection_layer.json" download="protection_layer.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/protection_layer.json" download="protection_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -299,7 +299,7 @@ purple is low risk and dark purple is high risk.
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\risk_layer.json" download="risk_layer.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/risk_layer.json" download="risk_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 

@@ -396,7 +396,7 @@ evidence section, we will down-select from these base-layer TTPs.
     .. raw:: html
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\platform_layer.json" download="platform_layer.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/platform_layer.json" download="platform_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -451,7 +451,7 @@ industry’s “medical equipment.”
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\threat_actor_layer.json" download="threat_actor_layer.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/threat_actor_layer.json" download="threat_actor_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -523,7 +523,7 @@ Layer. The ROADTools ATT&CK Navigator layer can be seen below in red.
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\software_layer.json" download="software_layer.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/software_layer.json" download="software_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -568,7 +568,7 @@ this campaign in yellow.
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\campaign_layer.json" download="campaign_layer.json">
+            <a class="btn btn-primary" target="_blank" href="../layers\/ampaign_layer.json" download="campaign_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -612,7 +612,7 @@ prioritization.
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\evidence_layer.json" download="evidence_layer.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/evidence_layer.json" download="evidence_layer.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -639,7 +639,7 @@ will make one combined overlay for each technology platform branch of your tree.
 
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\theory.json" download="theory.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/theory.json" download="theory.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
@@ -669,7 +669,7 @@ The video below walks through an example of combining the theory and evidence la
     .. raw:: html
 
         <p>
-            <a class="btn btn-primary" target="_blank" href="..layers\theory_+_evidence.json" download="theory_+_evidence.json">
+            <a class="btn btn-primary" target="_blank" href="../layers/theory_plus_evidence.json" download="theory_plus_evidence.json">
             <i class="fa fa-download"></i> Download Layer JSON</a>
         </p>
 
