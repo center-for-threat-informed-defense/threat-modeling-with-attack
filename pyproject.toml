@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "threat-modeling-with-attack"
-version = "1.0.0"
+version = "1.0.1"
 description = "Threat Modeling with ATT&CK"
 authors = ["CTID <ctid@mitre-engenuity.org>"]
 
@@ -32,7 +32,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.bumpver]
-current_version = "v1.0.0"
+current_version = "v1.0.1"
 version_pattern = "vMAJOR.MINOR.PATCH"
 commit_message = "Bump version {old_version} -> {new_version}"
 commit = true
