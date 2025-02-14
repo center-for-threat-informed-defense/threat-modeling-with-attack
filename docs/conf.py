@@ -33,7 +33,7 @@ release = version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme",
+    "sphinx_wagtail_theme",
     "sphinx_toolbox",
     "sphinx_toolbox.github",
 ]
@@ -57,13 +57,17 @@ rst_prolog = f"""
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+html_theme = "sphinx_wagtail_theme"
 html_static_path = ["_static"]
 html_extra_path = ["extra"]
 html_favicon = "_static/favicon.png"
+logo = "_static/ctid_logo_white.png"
 html_logo = "_static/ctid_logo_white.png"
 html_css_files = [
     "css/ctid.css",
+]
+html_js_files = [
+    "js/ctid.js",
 ]
 html_copy_source = False
 html_show_sourcelink = False
@@ -73,9 +77,14 @@ html_context = {
     "copyright_years": copyright_years,
     "prs_numbers": prs_numbers,
 }
+
 html_theme_options = {
+    "logo" : "ctid-white.png",
+    "logo_alt": "CTID",
     "analytics_id": "G-BRQ3ZFX9EQ",
     "display_version": True,
     "logo_only": True,
     "style_external_links": True,
+    "logo_width": 250,
+    "project_name": "Threat Modeling with ATT&CK"
 }
