@@ -148,43 +148,38 @@ em.newsgroup {
   padding: 0.8em 1em !important;
 }
 
+.admonition p,
+body.theme-dark .admonition p {
+  color: var(--mitre-black);
+}
+
 .admonition a,
 .admonition a.reference.external:after {
   color: var(--mitre-black) !important;
 }
 
-.admonition.attention .admonition-title {
-  background-color: var(--me-ext-yellow-dark);
-  color: var(--mitre-black);
-}
-
 .admonition.caution .admonition-title,
 .admonition.warning .admonition-title {
-  background-color: var(--me-ext-orange-highlighter);
+  background-color: var(--me-ext-orange-dark);
   color: var(--mitre-black);
 }
 
 .admonition.danger .admonition-title,
 .admonition.error .admonition-title {
-  background-color: var(--me-ext-cranberry-highlighter);
-  color: var(--text-color-inverse);
-}
-
-.admonition.important .admonition-title {
-  background-color: var(--me-ext-gray-green);
+  background-color: var(--me-ext-cranberry-dark);
   color: var(--text-color-inverse);
 }
 
 .admonition.hint .admonition-title,
 .admonition.tip .admonition-title {
-  background-color: var(--me-ext-blue);
+  background-color: var(--mitre-blue);
   color: var(--text-color-inverse);
 }
 
-.admonition.note .admonition-title,
-.admonition.seealso .admonition-title {
-  background-color: var(--me-ext-teal-highlighter);
-  color: var(--mitre-black);
+.admonition.important .admonition-title,
+.admonition.attention .admonition-title {
+  background-color: var(--mitre-light-blue);
+  color: var(--mitre-black) !important;
 }
 
 /* Figure styles */
@@ -318,11 +313,17 @@ body.theme-dark .admonition.note p {
 .navbar {
   padding: 20px 0 !important;
 }
-.navbar a {
+.navbar .navbar-brand {
+  font-size: 24px;
+}
+
+.navbar a,
+.nav-link {
   text-transform: uppercase;
   font-family: "Oswald", "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  letter-spacing: 1px;
+  color: var(--mitre-silver);
 }
 .navbar .logo-img {
   margin-right: 20px;
@@ -432,14 +433,6 @@ body.theme-dark .breadcrumb-item.active {
   color: var(--mitre-silver);
 }
 
-.admonition.important .admonition-title {
-  background-color: var(--mitre-light-blue);
-  color: var(--mitre-black) !important;
-}
-.admonition p {
-  color: var(--mitre-black) !important;
-}
-
 h1,
 h2,
 h3,
@@ -478,4 +471,22 @@ body.theme-dark .border-bottom,
 body.theme-dark .border-left,
 body.theme-dark .search li {
   border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+#collapseSidebar {
+  top: 80px;
+}
+.sticky-top.toc.page-toc {
+  top: 100px;
+}
+
+header .navbar {
+  justify-content: space-between;
+}
+
+a.navbar-brand {
+  float: right;
+}
+.navbar a h1 {
+  margin-bottom: 0;
 }
