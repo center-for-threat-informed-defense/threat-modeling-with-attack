@@ -36,6 +36,7 @@ extensions = [
     "sphinx_wagtail_theme",
     "sphinx_toolbox",
     "sphinx_toolbox.github",
+    # 'sphinxcontrib.images',
 ]
 github_username = "center-for-threat-informed-defense"
 github_repository = "threat-modeling-with-attack"
@@ -61,7 +62,7 @@ html_theme = "sphinx_wagtail_theme"
 html_static_path = ["_static"]
 html_extra_path = ["extra"]
 html_favicon = "_static/favicon.png"
-logo = "_static/ctid_logo_white.png"
+logo = "_static/ctid-white.png"
 html_logo = "_static/ctid_logo_white.png"
 html_css_files = [
     "css/ctid.css",
@@ -82,9 +83,6 @@ html_theme_options = {
     "logo" : "ctid-white.png",
     "logo_alt": "CTID",
     "analytics_id": "G-BRQ3ZFX9EQ",
-    "display_version": True,
-    "logo_only": True,
-    "style_external_links": True,
     "logo_width": 250,
-    "project_name": "Threat Modeling with ATT&CK"
+    "project_name": "Threat Modeling with ATT&CK",
 }

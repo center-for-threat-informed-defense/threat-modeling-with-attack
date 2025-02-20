@@ -55,7 +55,7 @@ map('int') | list -%}
   <div class="container-fluid">
     <div class="row">
       <aside class="col-12 col-lg-3 sidebar-container">
-        <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+        <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-2">
           {%- for sidebartemplate in sidebars %} {%- include sidebartemplate
           %} {%- endfor %}
           <div class="d-lg-none border-bottom">
@@ -94,7 +94,7 @@ map('int') | list -%}
             {% include "pager.html" %}
           </div>
           {% if display_toc and not hidetoc %}
-          <nav class="col-12 col-lg-3 pb-4">
+          <nav class="col-12 col-lg-3 pb-4 d-none d-lg-block">
             <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
               <p class="font-weight-bold" id="page-toc-heading">
                 Page contents

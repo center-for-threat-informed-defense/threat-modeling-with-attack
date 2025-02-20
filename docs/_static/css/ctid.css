@@ -12,7 +12,6 @@ body {
   --mitre-light-silver: #f1f3f4;
 
   --text-color-inverse: #ffffff;
-  --side-nav-background: #404040;
 
   color: var(--mitre-black);
   font-family: Arial, Helvetica, sans-serif;
@@ -34,51 +33,26 @@ body {
   --me-ext-orange-dark: #f56600;
   --me-ext-cranberry-highlighter: #ff006b;
   --me-ext-cranberry-dark: #bd0044;
-}
-
-@media screen and (min-width: 1100px) {
-  .wy-nav-content-wrap {
-    background-color: var(--me-core-gray-light);
-  }
-
-  .wy-nav-content {
-    background-color: var(--text-color-inverse);
-  }
-}
-
-em.newsgroup {
-  background-color: var(--mitre-highlighter);
-  padding: 5px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.rst-content a:hover {
-  color: var(--me-text-color);
-}
-
-.rst-content.style-external-links a.reference.external {
-  padding-right: 1em;
-}
-
-.rst-content.style-external-links a.reference.external:after {
-  font-size: 80%;
-  position: absolute;
+  --me-ext-code: #900136;
+  --border-radius: 10px;
 }
 
 /* Bootstrap button styles */
-
 .btn,
 .btn:focus,
 .btn-primary,
 .btn-primary:focus {
-  background-color: var(--me-ext-cranberry-highlighter);
+  background-color: var(--mitre-blue);
   color: white;
+  border-radius: 0;
+  border: none;
+  text-decoration: none !important;
 }
 
 .btn:hover,
 .btn-primary:hover {
-  background-color: var(--mitre-dark-navy);
+  background-color: var(--mitre-navy);
+  text-decoration: none !important;
 }
 
 .btn-secondary,
@@ -98,34 +72,13 @@ em.newsgroup {
 .btn-link:hover {
   color: var(--mitre-navy) !important;
 }
-
-.rst-content a.btn,
-.rst-content a.btn:active,
-.rst-content a.btn:visited {
-  color: var(--text-color-inverse);
-  font-weight: normal;
-  text-decoration: none;
+figure img {
+  border-radius: 0;
+  box-shadow: none;
 }
 
-/* Table styles */
-.rst-content div.wy-table-responsive table.docutils {
-  width: 100%;
-  table-layout: fixed;
-}
-
-.rst-content div.wy-table-responsive table.docutils thead th,
-.rst-content div.wy-table-responsive table.docutils tbody td {
-  white-space: normal;
-}
-
-.rst-content div.wy-table-responsive table.docutils thead th p,
-.rst-content div.wy-table-responsive table.docutils tbody td p {
-  margin: 0.5em 0;
-}
-
-.rst-content div.wy-table-responsive table.docutils thead th code.docutils,
-.rst-content div.wy-table-responsive table.docutils tbody td code.docutils {
-  white-space: pre-wrap;
+table p {
+  margin: 0;
 }
 
 /* Table of contents styles */
@@ -142,6 +95,7 @@ em.newsgroup {
 .admonition {
   background-color: var(--mitre-light-silver) !important;
   color: var(--mitre-black);
+  border-radius: var(--border-radius);
 }
 
 .admonition .admonition-title {
@@ -160,13 +114,14 @@ body.theme-dark .admonition p {
 
 .admonition.caution .admonition-title,
 .admonition.warning .admonition-title {
-  background-color: var(--me-ext-orange-dark);
+  background-color: var(--me-ext-gray-green-dark);
+  /* background-color: var(--me-ext-orange-dark); */
   color: var(--mitre-black);
 }
 
 .admonition.danger .admonition-title,
 .admonition.error .admonition-title {
-  background-color: var(--me-ext-cranberry-dark);
+  background-color: var(--me-ext-code);
   color: var(--text-color-inverse);
 }
 
@@ -404,6 +359,7 @@ footer p {
 
 .highlight-bash .highlight pre {
   background-color: var(--mitre-black);
+  border-radius: var(--border-radius);
 }
 
 .table .thead-dark th,
@@ -411,7 +367,6 @@ table.docutils:not(.field-list) .thead-dark th,
 body.theme-dark table.docutils:not(.field-list) thead th {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.1);
-  /* background-color: var(--mitre-dark-navy); */
   border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -449,7 +404,7 @@ h6 {
 
 .reference.internal.active {
   color: var(--mitre-black) !important;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .page-toc {
@@ -488,5 +443,32 @@ a.navbar-brand {
   float: right;
 }
 .navbar a h1 {
+  color: var(--text-color-inverse);
+  font-size: 24px;
   margin-bottom: 0;
+}
+#main {
+  padding: 10px 40px;
+}
+
+header.sticky-top {
+  z-index: 100;
+}
+#search-form .input-group-prepend div,
+#search-form input {
+  border-radius: 0 !important;
+}
+
+.toc.page-toc p,
+.caption .caption-text {
+  color: var(--mitre-black);
+  font-weight: 500 !important;
+}
+
+code {
+  color: var(--me-ext-code) !important;
+}
+
+body.theme-dark code {
+  color: var(--me-ext-cranberry-highlighter) !important;
 }
