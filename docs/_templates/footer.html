@@ -3,31 +3,15 @@
   theme_prev_next_buttons_location == 'both') and (next or prev) %} {#-
   Translators: This is an ARIA section label for the footer section of the page.
   -#}
-  <div
-    class="rst-footer-buttons"
-    role="navigation"
-    aria-label="{{ _('Footer') }}"
-  >
+  <div class="rst-footer-buttons" role="navigation" aria-label="{{ _('Footer') }}">
     {%- if prev %}
-    <a
-      href="{{ prev.link|e }}"
-      class="btn btn-neutral float-left"
-      title="{{ prev.title|striptags|e }}"
-      accesskey="p"
-      rel="prev"
-      ><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> {{
-      _('Previous') }}</a
-    >
+    <a href="{{ prev.link|e }}" class="btn btn-neutral float-left" title="{{ prev.title|striptags|e }}" accesskey="p"
+      rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> {{
+      _('Previous') }}</a>
     {%- endif %} {%- if next %}
-    <a
-      href="{{ next.link|e }}"
-      class="btn btn-neutral float-right"
-      title="{{ next.title|striptags|e }}"
-      accesskey="n"
-      rel="next"
-      >{{ _('Next') }}
-      <span class="fa fa-arrow-circle-right" aria-hidden="true"></span
-    ></a>
+    <a href="{{ next.link|e }}" class="btn btn-neutral float-right" title="{{ next.title|striptags|e }}" accesskey="n"
+      rel="next">{{ _('Next') }}
+      <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     {%- endif %}
   </div>
   {%- endif %}
@@ -41,111 +25,51 @@
         <h3>The Center for Threat-Informed Defense</h3>
         <p>
           The
-          <a
-            href="https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/"
-            target="_blank"
-            >Center for Threat-Informed Defense</a
-          >
+          <a href="https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/" target="_blank">Center
+            for Threat-Informed Defense</a>
           is a non-profit, privately funded research and development
           organization. Our mission is to advance the state of the art and the
           state of the practice in threat-informed defense globally.
         </p>
         <div class="footer-row">
           {%- if theme_logo and theme_logo != 'None' %}
-          <a
-            href="https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/"
-            target="_blank"
-            {%
-            if
-            theme_logo_alt
-            %}title="{{ theme_logo_alt|e }}"
-            {%
-            endif
-            %}
-            class="logo navbar-brand"
-          >
-            <img
-              src="{{ pathto('_static/' + theme_logo, 1) }}"
-              {%-
-              if
-              theme_logo_width
-              %}
-              width="{{ theme_logo_width|e }}"
-              {%
-              endif
-              %}
-              {%-
-              if
-              theme_logo_height
-              %}
-              height="{{ theme_logo_height|e }}"
-              {%
-              endif
-              %}
-              {%-
-              if
-              theme_logo_alt
-              %}
-              alt="{{ theme_logo_alt|e }}"
-              {%
-              endif
-              %}
-              {%-
-              if
-              theme_logo_title
-              %}
-              title="{{ theme_logo_title|e }}"
-              {%
-              endif
-              %}
-              class="logo-img"
-            />
+          <a href="https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/" target="_blank" {% if
+            theme_logo_alt %}title="{{ theme_logo_alt|e }}" {% endif %} class="logo navbar-brand">
+            <img src="{{ pathto('_static/' + theme_logo, 1) }}" {%- if theme_logo_width %}
+              width="{{ theme_logo_width|e }}" {% endif %} {%- if theme_logo_height %}
+              height="{{ theme_logo_height|e }}" {% endif %} {%- if theme_logo_alt %} alt="{{ theme_logo_alt|e }}" {%
+              endif %} {%- if theme_logo_title %} title="{{ theme_logo_title|e }}" {% endif %} class="logo-img" />
           </a>
           {% endif %}
           <div class="social-links">
-            <a
-              href="mailto:ctid@mitre-engenuity.org?subject=Top%20ATT&amp;CK%20Techniques"
-              aria-label="email ctid"
-              class="email"
-            >
+            <a href="mailto:ctid@mitre-engenuity.org?subject=Top%20ATT&amp;CK%20Techniques" aria-label="email ctid"
+              class="email">
               <i class="fas fa-2x fa-envelope"></i>
             </a>
-            <a
-              href="https://www.linkedin.com/showcase/center-for-threat-informed-defense/"
-              target="blank"
-              aria-label="ctid on linkedin"
-              class="linkedin"
-            >
+            <a href="https://www.linkedin.com/showcase/center-for-threat-informed-defense/" target="blank"
+              aria-label="ctid on linkedin" class="linkedin">
               <i class="fab fa-2x fa-linkedin"></i>
             </a>
-            <a
-              href="https://www.youtube.com/playlist?list=PLALq3Th79NnpUkRy8TUYVBKvysCp9xwNh"
-              target="blank"
-              class="youtube"
-              aria-label="mitre engenuity youtube"
-            >
+            <a href="https://www.youtube.com/playlist?list=PLALq3Th79NnpUkRy8TUYVBKvysCp9xwNh" target="blank"
+              class="youtube" aria-label="mitre engenuity youtube">
               <i class="fab fa-2x fa-youtube"></i>
             </a>
-            <a
-              href="https://github.com/center-for-threat-informed-defense/"
-              target="blank"
-              class="github"
-              aria-label="ctid github"
-            >
+            <a href="https://github.com/center-for-threat-informed-defense/" target="blank" class="github"
+              aria-label="ctid github">
               <i class="fab fa-2x fa-github"></i>
             </a>
           </div>
         </div>
       </div>
+      {% if theme_footer_links %}
       <div class="col-md-6">
         <h4>Related Sites</h4>
         <div class="external-links">
-          <a class="link">Attack Flow</a>
-          <a class="link">Mappings Explorer</a>
-          <a class="link">M3TID</a>
-          <a class="link">Top ATT&CK Techniques</a>
+          {% for link in theme_footer_links.split(',') %} {% set
+          link_text=link.split("|")[0] %} {% set link_url=link.split("|")[1] %}
+          <a class="link" href="{{ link_url }}" target="_blank">{{ link_text }}</a>
+          {% endfor %}
         </div>
-
         <p>
           {%- if show_copyright %} &#169; {{ copyright_years }} MITRE Engenuity.
           Approved for public release. Document number(s) {{ prs_numbers }}. {%-
@@ -168,9 +92,9 @@
           </span>
           {%- endif -%}
         </p>
+        {% endif %}
       </div>
     </div>
-
     {%- endblock %}
   </div>
 

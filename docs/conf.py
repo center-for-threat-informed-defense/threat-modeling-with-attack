@@ -85,4 +85,5 @@ html_theme_options = {
     "analytics_id": "G-BRQ3ZFX9EQ",
     "logo_width": 250,
     "project_name": "Threat Modeling with ATT&CK",
+    "footer_links": "Attack Flow|https://center-for-threat-informed-defense.github.io/attack-flow/, Mappings Explorer|https://center-for-threat-informed-defense.github.io/mappings-explorer/, Top ATT&CK Techniques|https://top-attack-techniques.mitre-engenuity.org/#/, M3TID|https://center-for-threat-informed-defense.github.io/m3tid/",
 }
