@@ -52,7 +52,7 @@ map('int') | list -%}
 <body>
   <script type="text/javascript" src="{{ pathto('_static/dist/blocking.js', 1) }}"></script>
   {%- include "header.html" %}
-  <div class="container-fluid">
+  <div class="container-fluid container">
     <div class="row">
       <aside class="col-12 col-lg-3 sidebar-container">
         <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-2">
@@ -130,6 +130,18 @@ map('int') | list -%}
     <script type="text/javascript" id="searchindexloader"></script>
     {% endblock -%} {%- block scripts2 %}{% endblock -%} {%- block footer %}{%
     endblock -%} {%- block footer2 %}{% endblock -%}
+    {% if googleanalytics_id %}
+    <!-- google analytics information -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id={{googleanalytics_id}}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', '{{googleanalytics_id}}', {
+        'anonymize_ip': false,
+      });
+    </script>
+    {% endif %}
 </body>
 
 </html>

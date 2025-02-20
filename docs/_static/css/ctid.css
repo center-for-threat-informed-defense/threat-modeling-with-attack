@@ -472,3 +472,18 @@ code {
 body.theme-dark code {
   color: var(--me-ext-cranberry-highlighter) !important;
 }
+
+iframe {
+  max-width: 100% !important;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+@media (min-width: 1400px) {
+  .container.container-fluid {
+    width: 1370px;
+    max-width: 1370px;
+  }
+}

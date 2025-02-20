@@ -21,6 +21,7 @@ project = "Threat Modeling with ATT&CK"
 author = "Center for Threat-Informed Defense"
 copyright_years = "2024"
 prs_numbers = "CT0122"
+googleanalytics_id= "G-BRQ3ZFX9EQ"
 
 # The full version, including alpha/beta/rc tags
 version = "v1.0.1"
@@ -77,12 +78,12 @@ html_use_smartypants = False
 html_context = {
     "copyright_years": copyright_years,
     "prs_numbers": prs_numbers,
+    "googleanalytics_id": googleanalytics_id,
 }
 
 html_theme_options = {
     "logo" : "ctid-white.png",
     "logo_alt": "CTID",
-    "analytics_id": "G-BRQ3ZFX9EQ",
     "logo_width": 250,
     "project_name": "Threat Modeling with ATT&CK",
     "footer_links": "Attack Flow|https://center-for-threat-informed-defense.github.io/attack-flow/, Mappings Explorer|https://center-for-threat-informed-defense.github.io/mappings-explorer/, Top ATT&CK Techniques|https://top-attack-techniques.mitre-engenuity.org/#/, M3TID|https://center-for-threat-informed-defense.github.io/m3tid/",
