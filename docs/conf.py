@@ -37,7 +37,6 @@ extensions = [
     "sphinx_wagtail_theme",
     "sphinx_toolbox",
     "sphinx_toolbox.github",
-    # 'sphinxcontrib.images',
 ]
 github_username = "center-for-threat-informed-defense"
 github_repository = "threat-modeling-with-attack"
