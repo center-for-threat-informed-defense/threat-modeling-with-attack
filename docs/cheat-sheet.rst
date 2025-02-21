@@ -43,7 +43,7 @@ Once you’ve got your list of brainstormed TTPs, search through your existing s
 
 :ref:`Question 3`
 -------------------
-Implement the mitigations listed within the ATT&CK page for each brainstormed TTP
+Implement the mitigations listed within the ATT&CK page for each brainstormed TTP:
 
 .. figure:: /_static/condensedprocess3.png
   :alt: ATT&CK Mitigations Outline
@@ -54,8 +54,8 @@ Implement the mitigations listed within the ATT&CK page for each brainstormed TT
 
 	**OR**
 
-Implement the NIST 800-53 controls for each brainstormed TTP using the MITRE Engenuity
-Mappings Explorer
+Implement the NIST 800-53 controls for each brainstormed TTP using CTID's
+Mappings Explorer:
 
 .. figure:: /_static/condensedprocess4.png
   :alt: Mappings Explorer Outline

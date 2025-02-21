@@ -13,11 +13,12 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+from slugify import slugify
 
 # -- Project information -----------------------------------------------------
 
 project = "Threat Modeling with ATT&CK" # project name
+slug = slugify(project)
 googleanalytics_id= "G-BRQ3ZFX9EQ" # find google analytics id from old analytics_id variable
 
 author = "Center for Threat-Informed Defense"
@@ -89,9 +90,6 @@ footer_links = [
     ["Top ATT&CK Techniques", "https://top-attack-techniques.mitre-engenuity.org/#/"],
     ["M3TID", "https://center-for-threat-informed-defense.github.io/m3tid/"],
 ]
-
-# set UTM slug to track traffic
-slug = "threat-modeling-with-attack"
 
 html_theme_options = {
     "logo" : "ctid_logo_white.png",

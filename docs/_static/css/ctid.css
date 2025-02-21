@@ -15,26 +15,6 @@ body {
 
   color: var(--mitre-black);
   font-family: Arial, Helvetica, sans-serif;
-
-  /* MITRE Engenuity Extended Colors */
-  --me-ext-navy: #212c5e;
-  --me-ext-navy-dark: #0f1538;
-  --me-ext-blue: #0096d1;
-  --me-ext-blue-dark: #005b94;
-  --me-ext-gray-green: #4da185;
-  --me-ext-gray-green-dark: #024f48;
-  --me-ext-teal-highlighter: #29e6d0;
-  --me-ext-teal-dark: #15b7ad;
-  --me-ext-green-highlighter: #7dea49;
-  --me-ext-green-dark: #3cab41;
-  --me-ext-yellow-highlighter: #fff601;
-  --me-ext-yellow-dark: #fedb22;
-  --me-ext-orange-highlighter: #ff8a36;
-  --me-ext-orange-dark: #f56600;
-  --me-ext-cranberry-highlighter: #ff006b;
-  --me-ext-cranberry-dark: #bd0044;
-  --me-ext-code: #900136;
-  --border-radius: 10px;
 }
 
 /* Bootstrap button styles */
@@ -72,6 +52,7 @@ body {
 .btn-link:hover {
   color: var(--mitre-navy) !important;
 }
+
 figure img {
   border-radius: 0;
   box-shadow: none;
@@ -105,6 +86,11 @@ table p {
 .admonition p,
 body.theme-dark .admonition p {
   color: var(--mitre-black);
+}
+
+.admonition p:last-child,
+body.theme-dark .admonition p:last-child {
+  margin-bottom: 0;
 }
 
 .admonition a,
@@ -145,6 +131,7 @@ body.theme-dark .admonition p {
   color: #555;
   /* color: #999; */
 }
+
 .page-toc a {
   color: #555 !important;
 }
@@ -176,6 +163,7 @@ body.theme-dark {
 .bg-primary {
   background-color: #0d2f4f !important;
 }
+
 /* .theme-dark .bg-primary {
   background-color: #005b94 !important;
 } */
@@ -184,9 +172,11 @@ body.theme-dark .form-control {
   background-color: var(--mitre-black);
   border-color: var(--mitre-silver);
 }
+
 body.theme-dark .input-group-text.bg-white {
   background-color: var(--mitre-black) !important;
 }
+
 body.theme-dark .border-top {
   border-color: var(--mitre-dark-navy) !important;
 }
@@ -197,6 +187,7 @@ a {
   text-decoration-thickness: 1px;
   text-decoration: none;
 }
+
 p a {
   text-decoration: underline;
 }
@@ -207,6 +198,7 @@ a:hover {
 }
 
 body.theme-dark {
+
   h1,
   h2,
   h3,
@@ -215,17 +207,21 @@ body.theme-dark {
   h6 {
     color: white;
   }
+
   p {
     color: rgba(255, 255, 255, 0.9);
   }
+
   a {
     color: #87deff;
     text-decoration: none;
     /* text-decoration-color: #87deff; */
   }
+
   p a {
     text-decoration: underline;
   }
+
   a:hover {
     color: #87deff;
     text-decoration: underline;
@@ -234,13 +230,16 @@ body.theme-dark {
   .page-toc a {
     color: var(--mitre-silver) !important;
   }
+
   .rst-content figcaption p span.caption-text {
     color: var(--mitre-silver);
   }
 }
+
 .btn-light {
   background-color: var(--mitre-blue) !important;
 }
+
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
@@ -254,12 +253,15 @@ body.theme-dark {
   background-color: #005b94;
   color: white !important;
 }
+
 body.theme-dark .admonition.note p {
   color: var(--mitre-black);
 }
+
 .page-toc a:hover {
   color: #005b94;
 }
+
 .current.reference.internal {
   color: #000;
 }
@@ -268,6 +270,7 @@ body.theme-dark .admonition.note p {
 .navbar {
   padding: 20px 0 !important;
 }
+
 .navbar .navbar-brand {
   font-size: 24px;
 }
@@ -280,6 +283,7 @@ body.theme-dark .admonition.note p {
   letter-spacing: 1px;
   color: var(--mitre-silver);
 }
+
 .navbar .logo-img {
   margin-right: 20px;
 }
@@ -306,42 +310,51 @@ footer .row {
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .footer-row .logo {
   margin: auto 0px;
 }
+
 .social-links {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .social-links a {
   margin: auto 0px;
 }
+
 .social-links i {
   color: var(--mitre-light-blue);
   font-size: 1.5em;
 }
+
 .external-links {
   display: flex;
   flex-wrap: wrap;
   margin: 20px 0;
 }
+
 .external-links .link {
   text-transform: uppercase;
   font-family: "Oswald", "Roboto", Helvetica, Arial, sans-serif;
   color: white;
 }
+
 .external-links .link:not(:last-child) {
   padding-right: 10px;
   margin-right: 10px;
   border-right: 3px solid var(--mitre-light-blue);
 }
+
 footer h3,
 footer h4 {
   text-transform: uppercase;
   font-family: "Oswald", "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
+
 footer p {
   font-size: 15px;
 }
@@ -374,6 +387,7 @@ body.theme-dark table.docutils:not(.field-list) thead th {
 body.theme-dark table.docutils:not(.field-list) {
   background-color: var(--mitre-black);
 }
+
 .table-dark th,
 body.theme-dark table.docutils:not(.field-list) th,
 .table-dark td,
@@ -381,9 +395,11 @@ body.theme-dark table.docutils:not(.field-list) td,
 .table-dark thead th {
   border-color: rgba(255, 255, 255, 0.3);
 }
+
 .breadcrumb-item.active {
   color: #555;
 }
+
 body.theme-dark .breadcrumb-item.active {
   color: var(--mitre-silver);
 }
@@ -397,6 +413,7 @@ h6 {
   font-family: "Oswald", "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
+
 .reference.internal:hover {
   color: var(--mitre-black);
   text-decoration: underline;
@@ -411,6 +428,7 @@ h6 {
   word-break: keep-all;
   line-break: strict;
 }
+
 body.theme-dark .reference.internal:hover,
 body.theme-dark .reference.internal.active {
   color: var(--mitre-light-blue) !important;
@@ -431,6 +449,7 @@ body.theme-dark .search li {
 #collapseSidebar {
   top: 80px;
 }
+
 .sticky-top.toc.page-toc {
   top: 100px;
 }
@@ -442,11 +461,13 @@ header .navbar {
 a.navbar-brand {
   float: right;
 }
+
 .navbar a h1 {
   color: var(--text-color-inverse);
   font-size: 24px;
   margin-bottom: 0;
 }
+
 #main {
   padding: 10px 40px;
 }
@@ -454,6 +475,7 @@ a.navbar-brand {
 header.sticky-top {
   z-index: 100;
 }
+
 #search-form .input-group-prepend div,
 #search-form input {
   border-radius: 0 !important;

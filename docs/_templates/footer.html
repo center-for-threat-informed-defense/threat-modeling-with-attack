@@ -25,7 +25,7 @@
         <h3>The Center for Threat-Informed Defense</h3>
         <p>
           The
-          <a href="https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/" target="_blank">Center
+          <a href="https://ctid.mitre.org/" target="_blank">Center
             for Threat-Informed Defense</a>
           is a non-profit, privately funded research and development
           organization. Our mission is to advance the state of the art and the
@@ -33,7 +33,7 @@
         </p>
         <div class="footer-row">
           {%- if theme_logo and theme_logo != 'None' %}
-          <a href="https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/" target="_blank" {% if
+          <a href="https://ctid.mitre.org/" target="_blank" {% if
             theme_logo_alt %}title="{{ theme_logo_alt|e }}" {% endif %} class="logo navbar-brand">
             <img src="{{ pathto('_static/' + theme_logo, 1) }}" {%- if theme_logo_width %}
               width="{{ theme_logo_width|e }}" {% endif %} {%- if theme_logo_height %}
@@ -42,7 +42,7 @@
           </a>
           {% endif %}
           <div class="social-links">
-            <a href="mailto:ctid@mitre-engenuity.org?subject=Top%20ATT&amp;CK%20Techniques" aria-label="email ctid"
+            <a href="mailto:ctid@mitre.org" aria-label="email ctid"
               class="email">
               <i class="fas fa-2x fa-envelope"></i>
             </a>
@@ -51,7 +51,7 @@
               <i class="fab fa-2x fa-linkedin"></i>
             </a>
             <a href="https://www.youtube.com/playlist?list=PLALq3Th79NnpUkRy8TUYVBKvysCp9xwNh" target="blank"
-              class="youtube" aria-label="mitre engenuity youtube">
+              class="youtube" aria-label="mitre ctid youtube">
               <i class="fab fa-2x fa-youtube"></i>
             </a>
             <a href="https://github.com/center-for-threat-informed-defense/" target="blank" class="github"
@@ -71,7 +71,7 @@
           {% endfor %}
         </div>
         <p>
-          {%- if show_copyright %} &#169; {{ copyright_years }} MITRE Engenuity.
+          {%- if show_copyright %} &#169; {{ copyright_years }} MITRE.
           Approved for public release. Document number(s) {{ prs_numbers }}. {%-
           endif %} {%- if build_id and build_url %}
           <span class="build">

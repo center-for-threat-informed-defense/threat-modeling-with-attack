@@ -41,17 +41,14 @@ The two axes on the above table represent the theoretical and evidence-based out
 a manifested threat.
 
 * *Theory* describes threats that have potential to impact your system.
-
-   * Theory-based threats are hypothetical threats. These include brainstorming
-     conducted by your team, known exploits performed in a controlled environment, and
-     hypothetical attacks that have not been leveraged by threat actors.
-
+    * Theory-based threats are hypothetical threats. These include brainstorming
+      conducted by your team, known exploits performed in a controlled environment, and
+      hypothetical attacks that have not been leveraged by threat actors.
 * *Evidence* describes documented threats that have been leveraged against other systems.
-
-   * Evidence-based threats are observed threats. These include TTPs used to exploit
-     technology platforms leveraged by your system, known exploits used by adversaries
-     that target your industry, and malicious actions you’ve recorded within your
-     system.
+    * Evidence-based threats are observed threats. These include TTPs used to exploit
+      technology platforms leveraged by your system, known exploits used by adversaries
+      that target your industry, and malicious actions you’ve recorded within your
+      system.
 
 When considered together, these two approaches give a well-rounded view of a system’s
 security posture, for both known and unknown threats.
