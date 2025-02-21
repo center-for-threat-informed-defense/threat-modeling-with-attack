@@ -56,6 +56,8 @@ body {
 figure img {
   border-radius: 0;
   box-shadow: none;
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 table p {
@@ -418,6 +420,10 @@ h6 {
   font-weight: 400;
 }
 
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
 .reference.internal:hover {
   color: var(--mitre-black);
   text-decoration: underline;
@@ -456,6 +462,7 @@ body.theme-dark .search li {
 
 .sticky-top.toc.page-toc {
   top: 100px;
+  padding-top: 0;
 }
 
 header .navbar {
