@@ -262,6 +262,10 @@ body.theme-dark .admonition.note p {
   color: #005b94;
 }
 
+.site-toc .toc ul {
+  padding-left: 0;
+}
+
 .current.reference.internal {
   color: #000;
 }
