@@ -38,8 +38,8 @@ Leveraging existing CTI allows you to develop known attack vectors that could be
 against your system. There are many resources for CTI data and this appendix is made to
 refence a few that we have found useful.
 
-*	The Center’s `Sightings Ecosystem
- 	<https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/sightings-ecosystem/>`_
+*	The Center's `Sightings Ecosystem
+ 	<https://ctid.mitre.org/projects/sightings-ecosystem/>`_
  	project is an example of data that can be leveraged throughout this process to help
  	identify, or highlight, commonly seen TTPs. At the time of publish, the work
  	consists of over 1.6 million sightings of 353 unique techniques from almost 200

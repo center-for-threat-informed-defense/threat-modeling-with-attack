@@ -13,11 +13,14 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+from slugify import slugify
 
 # -- Project information -----------------------------------------------------
 
-project = "Threat Modeling with ATT&CK"
+project = "Threat Modeling with ATT&CK" # project name
+slug = slugify(project)
+googleanalytics_id= "G-BRQ3ZFX9EQ" # find google analytics id from old analytics_id variable
+
 author = "Center for Threat-Informed Defense"
 copyright_years = "2024"
 prs_numbers = "CT0122"
@@ -33,11 +36,12 @@ release = version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme",
+    "sphinx_wagtail_theme",
     "sphinx_toolbox",
     "sphinx_toolbox.github",
 ]
 github_username = "center-for-threat-informed-defense"
+# add the name of the project repository
 github_repository = "threat-modeling-with-attack"
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -57,13 +61,17 @@ rst_prolog = f"""
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+html_theme = "sphinx_wagtail_theme"
 html_static_path = ["_static"]
 html_extra_path = ["extra"]
-html_favicon = "_static/favicon.png"
+html_favicon = "_static/favicon.ico"
+logo = "_static/ctid_logo_white.png"
 html_logo = "_static/ctid_logo_white.png"
 html_css_files = [
     "css/ctid.css",
+]
+html_js_files = [
+    "js/ctid.js",
 ]
 html_copy_source = False
 html_show_sourcelink = False
@@ -72,10 +80,21 @@ html_use_smartypants = False
 html_context = {
     "copyright_years": copyright_years,
     "prs_numbers": prs_numbers,
+    "googleanalytics_id": googleanalytics_id,
 }
+
+# configure 3-4 project links for the footer
+footer_links = [
+    ["Attack Flow", "https://center-for-threat-informed-defense.github.io/attack-flow/"],
+    ["Mappings Explorer", "https://center-for-threat-informed-defense.github.io/mappings-explorer/"],
+    ["Top ATT&CK Techniques", "https://top-attack-techniques.mitre-engenuity.org/#/"],
+    ["M3TID", "https://center-for-threat-informed-defense.github.io/m3tid/"],
+]
+
 html_theme_options = {
-    "analytics_id": "G-BRQ3ZFX9EQ",
-    "display_version": True,
-    "logo_only": True,
-    "style_external_links": True,
+    "logo" : "ctid_logo_white.png",
+    "logo_alt": "The Center for Threat-Informed Defense",
+    "logo_width": 250,
+    "project_name": "Threat Modeling with ATT&CK",
+    "footer_links": ",".join([f"{link[0]}|{link[1]}?utm_source={slug}" for link in footer_links]),
 }

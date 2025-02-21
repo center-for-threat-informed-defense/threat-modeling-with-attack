@@ -10,15 +10,15 @@ Threat Modeling with ATT&CK |version|
 
 Threat Modeling with ATT&CK provides a recommended approach that integrates `MITRE
 ATT&CK® <https://attack.mitre.org/>`_ – the common language that security operations
-teams rely upon – into their organization’s threat modeling practices. The ATT&CK
+teams rely upon – into their organization's threat modeling practices. The ATT&CK
 integration enables cyber defenders to focus on the activity of threat modeling with a
 clear, consistent understanding of adversary behaviors and tailor defensive investments
 to mitigate threats related to their systems or environments.
 
-This project is created and maintained by `MITRE Engenuity Center for Threat-Informed
-Defense (Center) <https://ctid.mitre-engenuity.org/>`_ and is funded by our `research
+This project is created and maintained by `MITRE Center for Threat-Informed
+Defense (Center) <https://ctid.mitre.org/>`_ and is funded by our `research
 participants
-<https://mitre-engenuity.org/cybersecurity/center-for-threat-informed-defense/our-work/threat-modeling-with-attack/#research-participants>`_,
+<https://ctid.mitre.org/projects/threat-modeling-with-attack/#participants-section>`_,
 in furtherance of our mission to advance the state of the art and the state of the
 practice in threat-informed defense globally.
 
@@ -38,8 +38,7 @@ practice in threat-informed defense globally.
 Notice
 ------
 
-© |copyright_years| MITRE Engenuity. Approved for public release. Document number(s)
-|prs_numbers|.
+© |copyright_years| MITRE. Approved for public release. Document number(s) |prs_numbers|.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
 file except in compliance with the License. You may obtain a copy of the License at
