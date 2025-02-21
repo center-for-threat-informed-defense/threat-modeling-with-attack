@@ -23,23 +23,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.8'
-    - name: Install Poetry
-      run: curl -sSL https://install.python-poetry.org/ | python -
-    - name: Add Poetry to PATH
-      run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
-    - name: Install dependencies
-      run: poetry install
-    - name: Build HTML docs
-      run: poetry run make docs-ci
-    - name: Upload HTML docs
-      uses: actions/upload-artifact@v3
-      with:
-        name: threat-modeling-with-attack-docs-html
-        path: docs/_build/dirhtml/
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.8"
+      - name: Install Poetry
+        run: curl -sSL https://install.python-poetry.org/ | python -
+      - name: Add Poetry to PATH
+        run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
+      - name: Install dependencies
+        run: poetry install
+      - name: Build HTML docs
+        run: poetry run make docs-ci
+      - name: Upload HTML docs
+        uses: actions/upload-artifact@v4
+        with:
+          name: threat-modeling-with-attack-docs-html
+          path: docs/_build/dirhtml/
 
   github_pages:
     # This job only runs when committing or merging to main branch.
@@ -51,17 +51,17 @@ jobs:
       url: $\{\{ steps.deployment.outputs.page_url \}\}
 
     steps:
-    - name: Setup Pages
-      uses: actions/configure-pages@v2
-    - name: Download HTML docs
-      uses: actions/download-artifact@v3
-      with:
-        name: threat-modeling-with-attack-docs-html
-        path: docs
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-        path: ./docs
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v1
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Download HTML docs
+        uses: actions/download-artifact@v4
+        with:
+          name: threat-modeling-with-attack-docs-html
+          path: docs
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./docs
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
