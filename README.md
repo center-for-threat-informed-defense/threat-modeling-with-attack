@@ -41,7 +41,7 @@ advance threat-informed defense:
 Please submit [issues on
 GitHub](https://github.com/center-for-threat-informed-defense/threat-modeling-with-attack/issues)
 for any technical questions or requests. You may also contact
-[ctid@mitre-engenuity.org](mailto:ctid@mitre-engenuity.org?subject=Question%20about%20threat-modeling-with-attack)
+[ctid@mitre.org](mailto:ctid@mitre.org?subject=Question%20about%20threat-modeling-with-attack)
 directly for more general inquiries about the Center for Threat-Informed Defense.
 
 We welcome your contributions to help advance Threat Modeling with ATT&CK in the form of
@@ -53,7 +53,7 @@ before making a pull request.
 
 ## Notice
 
-© 2024 MITRE Engenuity. Approved for public release. Document number(s) CT0122.
+© 2024 MITRE. Approved for public release. Document number(s) CT0122.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
 file except in compliance with the License. You may obtain a copy of the License at

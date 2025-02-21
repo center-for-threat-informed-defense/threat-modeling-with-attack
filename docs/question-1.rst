@@ -5,7 +5,7 @@ Question 1: What are we working on?
 
 .. figure:: /_static/question1graphic.png
   :alt: Question 1 Overview
-  :scale: 20%
+  :scale: 100%
   :align: center
 
   Question 1 Overview Graphic (Click to Enlarge)
@@ -130,8 +130,8 @@ should effectively protect the confidentiality of that data.
 
 .. figure:: /_static/system-decomp.png
   :alt: Mission/System Decomposition Graphic
-  :scale: 20%
-  :align: right
+  :scale: 15%
+  :align: center
 
 Step 2: Identify Operational Tasks (Cross Functional Flow Chart)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -222,14 +222,14 @@ DFD, highlighting them in gold.
 .. figure:: /_static/amps-components.png
   :alt: Critical AMPS System Components
   :scale: 60%
-  :align: left
+  :align: center
 
   Critical AMPS System Components
 
 .. figure:: /_static/dfd-midlevel.png
   :alt: Mid-Level DFD with Trust Boundaries & ID-ed Critical Assets
   :scale: 60%
-  :align: right
+  :align: center
 
   Mid-Level DFD with Trust Boundaries & ID-ed Critical Assets
 
