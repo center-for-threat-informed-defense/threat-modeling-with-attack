@@ -82,11 +82,21 @@ html_context = {
     "googleanalytics_id": googleanalytics_id,
 }
 
+# configure 3-4 project links for the footer
+footer_links = [
+    ["Attack Flow", "https://center-for-threat-informed-defense.github.io/attack-flow/"],
+    ["Mappings Explorer", "https://center-for-threat-informed-defense.github.io/mappings-explorer/"],
+    ["Top ATT&CK Techniques", "https://top-attack-techniques.mitre-engenuity.org/#/"],
+    ["M3TID", "https://center-for-threat-informed-defense.github.io/m3tid/"],
+]
+
+# set UTM slug to track traffic
+slug = "threat-modeling-with-attack"
+
 html_theme_options = {
     "logo" : "ctid_logo_white.png",
     "logo_alt": "The Center for Threat-Informed Defense",
     "logo_width": 250,
     "project_name": "Threat Modeling with ATT&CK",
-    # configure 3-4 project links for the footer
-    "footer_links": "Attack Flow|https://center-for-threat-informed-defense.github.io/attack-flow/, Mappings Explorer|https://center-for-threat-informed-defense.github.io/mappings-explorer/, Top ATT&CK Techniques|https://top-attack-techniques.mitre-engenuity.org/#/, M3TID|https://center-for-threat-informed-defense.github.io/m3tid/",
+    "footer_links": ",".join([f"{link[0]}|{link[1]}?utm_source={slug}" for link in footer_links]),
 }
