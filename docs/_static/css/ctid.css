@@ -291,7 +291,7 @@ body.theme-dark .admonition.note p {
 }
 
 .navbar .logo-img {
-  margin-right: 20px;
+  margin-right: 0;
 }
 
 .navbar-toggler {
