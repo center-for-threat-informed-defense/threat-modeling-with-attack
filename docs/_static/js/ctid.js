@@ -22,7 +22,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Get all headings within the post content section
-const headings = document.querySelectorAll("section[id] h1, section[id] h2, section[id] h3, section[id] h4, section[id] h5, section[id] h6");
+const headings = document.querySelectorAll(
+    "section[id] h1, section[id] h2, section[id] h3, section[id] h4, section[id] h5, section[id] h6"
+);
 const navLinks = document.querySelectorAll(".page-toc li a");
 
 // Add an event listener listening for scroll
@@ -36,7 +38,7 @@ if (navLinks.length > 0) {
  */
 function navHighlighter() {
     // Get current scroll position
-    const targetY = + document.querySelector("header").offsetHeight;
+    const targetY = +document.querySelector("header").offsetHeight;
 
     let closestEl = null;
     let closestDist = 999999;
@@ -62,19 +64,15 @@ function navHighlighter() {
     // current active link.
     if (closestEl) {
         let sectionId = closestEl.parentNode.id;
-        console.log(firstHeader);
-        console.log(closestEl);
         if (closestEl === firstHeader) {
             // Sphinx does this annoying thing where the first TOC entry doesn't
             // have the correct anchor, it's just #.
-            console.log("top condition");
-            navLinks.forEach(nl => nl.classList.remove("active"));
+            navLinks.forEach((nl) => nl.classList.remove("active"));
             navLinks[0].classList.add("active");
         } else {
-            console.log("bottom condition");
             for (const navLink of navLinks) {
                 if (navLink.hash === `#${sectionId}`) {
-                    navLinks.forEach(nl => nl.classList.remove("active"));
+                    navLinks.forEach((nl) => nl.classList.remove("active"));
                     navLink.classList.add("active");
                     break;
                 }
