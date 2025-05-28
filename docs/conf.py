@@ -95,7 +95,7 @@ footer_links = [
         "Mappings Explorer",
         "https://center-for-threat-informed-defense.github.io/mappings-explorer/",
     ],
-    ["Top ATT&CK Techniques", "https://top-attack-techniques.mitre-engenuity.org/#/"],
+    ["Top ATT&CK Techniques", "http://center-for-threat-informed-defense.github.io/top-attack-techniques/"],
     ["M3TID", "https://center-for-threat-informed-defense.github.io/m3tid/"],
 ]
 
